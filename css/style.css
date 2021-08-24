@@ -1,0 +1,75 @@
+/* 
+dark crimson: #5e0606;
+light crimson: #a60b0b;
+
+dark gold: #996700;
+light gold: #e69b00;
+*/
+
+* {
+	margin: 0px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto Slab", serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #777;
+	padding: 30px;
+}
+
+.header {
+	height: 90vh;
+	background-image: linear-gradient(
+			to right bottom,
+			rgb(153, 103, 0, 0.8),
+			rgb(230, 155, 0, 0.8)
+		),
+		url(../img/paella.jpg);
+	background-size: cover;
+	background-position: center;
+
+	position: relative;
+}
+
+.header__logo-box {
+	top: 20px;
+	left: 40px;
+
+	position: absolute;
+}
+
+.header__logo {
+	height: 150px;
+}
+
+.header__text-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+	font-family: "Sancreek", cursive;
+	color: #5e0606;
+	text-transform: uppercase;
+}
+
+.heading-primary--main {
+	display: block;
+	font-size: 60px;
+	font-weight: 400;
+	letter-spacing: 20px;
+	text-align: center;
+}
+
+.heading-primary--sub {
+	display: block;
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 10px;
+}
