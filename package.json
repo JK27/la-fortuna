@@ -1,0 +1,22 @@
+{
+  "name": "la-fortuna",
+  "version": "1.0.0",
+  "description": "La Fortuna Spanish Restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JK27/la-fortuna.git"
+  },
+  "author": "Juan Carlos Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JK27/la-fortuna/issues"
+  },
+  "homepage": "https://github.com/JK27/la-fortuna#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
