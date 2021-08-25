@@ -17,11 +17,6 @@ html {
 
 /* -------------------------------------------------------- BODY */
 body {
-  font-family: "Roboto Slab", serif;
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 1.6;
-  color: #a60b0b;
   padding: 30px; }
 
 /* -------------------------------------------------------- CONTAINER */
@@ -29,46 +24,10 @@ body {
   display: grid;
   grid-template-rows: 90vh min-content; }
 
-/* -------------------------------------------------------- HEADER */
-.header {
-  position: relative;
-  background-image: linear-gradient(to right bottom, rgba(153, 103, 0, 0.8), rgba(230, 155, 0, 0.8)), url(../img/paella.jpg);
-  background-size: cover;
-  background-position: center;
-  /* ----------------------------------------- LOGO-BOX */
-  /* ----------------------------------------- LOGO */
-  /* ----------------------------------------- TEXT-BOX */ }
-  .header__logo-box {
-    top: 20px;
-    left: 40px;
-    position: absolute; }
-  .header__logo {
-    height: 15rem; }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .header__link {
-    font-family: "Roboto Slab", serif;
-    color: #5e0606;
-    text-decoration: none; }
-
-/* ----------------------------------------- HEADING-PRIMARY */
-.heading-primary {
-  font-family: "Sancreek", cursive;
-  color: #5e0606;
-  text-transform: uppercase;
-  /* -------------------------- MAIN */
-  /* -------------------------- SUB */ }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 2rem;
-    text-align: center; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 1rem; }
+/* -------------------------------------------------------- BODY */
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #a60b0b; }

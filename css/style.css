@@ -17,17 +17,20 @@ html {
 
 /* -------------------------------------------------------- BODY */
 body {
-  font-family: "Roboto Slab", serif;
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 1.6;
-  color: #a60b0b;
   padding: 30px; }
 
 /* -------------------------------------------------------- CONTAINER */
 .container {
   display: grid;
   grid-template-rows: 90vh min-content; }
+
+/* -------------------------------------------------------- BODY */
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #a60b0b; }
 
 /* -------------------------------------------------------- HEADER */
 .header {
@@ -75,5 +78,11 @@ body {
     grid-template-columns: repeat(3, auto);
     align-self: center; }
     .header__links--btn {
-      font-size: 2rem;
-      margin: 4rem; }
+      font-family: "Roboto Slab", serif;
+      font-weight: 900;
+      font-size: 3rem;
+      color: #5e0606;
+      background-color: transparent;
+      border: 0;
+      margin: 4rem;
+      cursor: pointer; }
