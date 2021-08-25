@@ -16,7 +16,7 @@ html {
 body {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.7;
   color: #999;
   padding: 30px; }
@@ -49,7 +49,7 @@ body {
 
 /* ----------------------------------------- LOGO */
 .header__logo {
-  height: 15rem; }
+  height: 150px; }
 
 /* ----------------------------------------- TEXT-BOX */
 .header__text-box {
@@ -67,14 +67,14 @@ body {
 /* -------------------------- MAIN */
 .heading-primary--main {
   display: block;
-  font-size: 6rem;
+  font-size: 60rem;
   font-weight: 400;
-  letter-spacing: 2rem;
+  letter-spacing: 20px;
   text-align: center; }
 
 /* -------------------------- SUB */
 .heading-primary--sub {
   display: block;
-  font-size: 4rem;
+  font-size: 40px;
   font-weight: 700;
-  letter-spacing: 1rem; }
+  letter-spacing: 10px; }
