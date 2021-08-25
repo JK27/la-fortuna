@@ -32,3 +32,60 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   color: #a60b0b; }
+
+.btn {
+  cursor: pointer; }
+
+/* -------------------------------------------------------- HEADER */
+.header {
+  position: relative;
+  font-family: "Sancreek", cursive;
+  color: #5e0606;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-image: linear-gradient(to right bottom, rgba(153, 103, 0, 0.8), rgba(230, 155, 0, 0.8)), url(../img/paella.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: auto;
+  /* -------------------------------------------- HEADER BOX */
+  /* --------------------------------------- LOGO */
+  /* --------------------------------------- HEADING */
+  /* -------------------------------------------- LINKS */ }
+  .header__box {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-self: flex-end; }
+  .header__logo {
+    height: 15rem;
+    top: 20px;
+    left: 40px;
+    justify-self: right; }
+  .header__heading {
+    justify-self: left;
+    /* --------------------------- MAIN */
+    /* --------------------------- SUB */ }
+    .header__heading--main {
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 2rem;
+      margin-left: 1rem; }
+    .header__heading--sub {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 1rem; }
+  .header__links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-self: center; }
+    .header__links--btn {
+      font-family: "Roboto Slab", serif;
+      font-weight: 900;
+      font-size: 3rem;
+      color: #5e0606;
+      background-color: transparent;
+      border: 0;
+      margin: 4rem; }

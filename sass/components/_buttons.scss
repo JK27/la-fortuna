@@ -1,0 +1,27 @@
+.btn-link {
+	&:link,
+	&:visited {
+		font-family: $font-primary;
+		font-size: 3rem;
+		font-weight: 900;
+		color: currentColor;
+		margin: 4rem;
+		text-decoration: none;
+		display: inline-block;
+		border-bottom: 1px solid currentColor;
+
+		transition: all 0.5s;
+	}
+
+	&:hover {
+		background-color: $color-primary-dark;
+		color: $color-secondary-dark;
+		box-shadow: 0 1rem 2rem rgba($color-primary-dark, 0.5);
+		transform: translateY(-0.8rem);
+	}
+
+	&:active {
+		box-shadow: 0 0.5rem 1rem rgba($color-primary-dark, 0.5);
+		transform: translateY(0);
+	}
+}
