@@ -32,6 +32,7 @@
 		height: 15rem;
 		top: 20px;
 		left: 40px;
+		align-self: center;
 		justify-self: right;
 	}
 
@@ -45,6 +46,22 @@
 			font-weight: 400;
 			letter-spacing: 2rem;
 			margin-left: 1rem;
+		}
+
+		&--small {
+			display: grid;
+			grid-template-columns: 1fr max-content 1fr;
+			column-gap: 1.5rem;
+			align-items: center;
+			font-size: 2rem;
+
+			&::before,
+			&::after {
+				content: "";
+				height: 1px;
+				display: block;
+				background-color: currentColor;
+			}
 		}
 
 		/* --------------------------- SUB */

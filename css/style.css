@@ -32,26 +32,39 @@ body {
   line-height: 1.6;
   color: #a60b0b; }
 
-.btn-link:link, .btn-link:visited {
-  font-family: "Roboto Slab", serif;
-  font-size: 3rem;
-  font-weight: 900;
-  color: currentColor;
-  margin: 4rem;
-  text-decoration: none;
-  display: inline-block;
-  border-bottom: 1px solid currentColor;
-  transition: all 0.5s; }
+.btn-link {
+  backface-visibility: hidden; }
+  .btn-link:link, .btn-link:visited {
+    font-family: "Roboto Slab", serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: currentColor;
+    margin: 4rem;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid currentColor;
+    transition: all 0.5s;
+    animation: moveInBottom 2s ease; }
+  .btn-link:hover {
+    background-color: #5e0606;
+    color: #996700;
+    box-shadow: 0 1rem 2rem rgba(94, 6, 6, 0.5);
+    transform: translateY(-0.8rem); }
+  .btn-link:active {
+    box-shadow: 0 0.5rem 1rem rgba(94, 6, 6, 0.5);
+    transform: translateY(0); }
 
-.btn-link:hover {
-  background-color: #5e0606;
-  color: #996700;
-  box-shadow: 0 1rem 2rem rgba(94, 6, 6, 0.5);
-  transform: translateY(-0.8rem); }
+/* -------------------------------------------------------- KEYFRAMES */
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
-.btn-link:active {
-  box-shadow: 0 0.5rem 1rem rgba(94, 6, 6, 0.5);
-  transform: translateY(0); }
+.features {
+  background-color: #fff6e5; }
 
 /* -------------------------------------------------------- HEADER */
 .header {
@@ -79,6 +92,7 @@ body {
     height: 15rem;
     top: 20px;
     left: 40px;
+    align-self: center;
     justify-self: right; }
   .header__heading {
     text-transform: uppercase;
@@ -90,6 +104,17 @@ body {
       font-weight: 400;
       letter-spacing: 2rem;
       margin-left: 1rem; }
+    .header__heading--small {
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      column-gap: 1.5rem;
+      align-items: center;
+      font-size: 2rem; }
+      .header__heading--small::before, .header__heading--small::after {
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: currentColor; }
     .header__heading--sub {
       font-size: 4rem;
       font-weight: 700;

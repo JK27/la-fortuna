@@ -1,4 +1,6 @@
 .btn-link {
+	backface-visibility: hidden;
+
 	&:link,
 	&:visited {
 		font-family: $font-primary;
@@ -11,6 +13,8 @@
 		border-bottom: 1px solid currentColor;
 
 		transition: all 0.5s;
+
+		animation: moveInBottom 2s ease;
 	}
 
 	&:hover {
@@ -22,6 +26,19 @@
 
 	&:active {
 		box-shadow: 0 0.5rem 1rem rgba($color-primary-dark, 0.5);
+		transform: translateY(0);
+	}
+}
+
+/* -------------------------------------------------------- KEYFRAMES */
+@keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	100% {
+		opacity: 1;
 		transform: translateY(0);
 	}
 }
