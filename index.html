@@ -18,7 +18,7 @@
 			rel="stylesheet"
 		/>
 
-		<!--------------------------------------------------------------- FAVICON -->
+		<!------------------------------------------- FAVICON -->
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
@@ -47,21 +47,25 @@
 
 		<title>La Fortuna</title>
 	</head>
-	<body>
-		<!--------------------------------------------------------------- HEADER -->
+	<!---------------------------------------------------------------------- BODY -->
+	<body class="container">
+		<!---------------------------------------------------------- HEADER -->
 		<header class="header">
-			<!----------------------------------------- LOGO BOX -->
-			<div class="header__logo-box">
+			<!---------------------------------------------- HEADING -->
+			<div class="header__box">
+				<!---------------------------------- LOGO -->
 				<img src="img/quixote.png" alt="logo" class="header__logo" />
+				<div class="header__heading">
+					<h1 class="header__heading--main">La Fortuna</h1>
+					<h3 class="header__heading--sub">Mi casa es su casa</h3>
+				</div>
 			</div>
-			<!----------------------------------------- TEXT BOX -->
-			<div class="header__text-box">
-				<!------------------------ HEADING -->
-				<h1 class="heading-primary">
-					<span class="heading-primary--main">La Fortuna</span>
-					<span class="heading-primary--sub">Mi casa es su casa</span>
-				</h1>
+			<div class="header__links">
+				<button class="btn header__links--btn" href="#">Location</button>
+				<button class="btn header__links--btn" href="#">Takeaway</button>
+				<button class="btn header__links--btn" href="#">Menu</button>
 			</div>
 		</header>
+		<section class="features">FEATURES</section>
 	</body>
 </html>

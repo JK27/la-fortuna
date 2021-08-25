@@ -1,81 +1,75 @@
 
 /* -------------------------------------------------------- COLOUR VARS */
-/* -------------------------------------------------------- GLOBAL */
+/* -------------------------------------------------------- FONT VARS */
+/* -------------------------------------------------------- UNIVERSAL SELECTORS */
+/* Selects every element on the page and applies these declarations */
 *,
 *::after,
 *::before {
-  margin: 0px;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 /* -------------------------------------------------------- HTML */
 html {
+  box-sizing: border-box;
   /* Making the root font size 10px makes it much easier to convert all the rest of measure units into rem. Default font size is 16px (100%), so 10px is 62.5% */
   font-size: 62.5%; }
 
 /* -------------------------------------------------------- BODY */
 body {
   font-family: "Roboto Slab", serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #999;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #a60b0b;
   padding: 30px; }
+
+/* -------------------------------------------------------- CONTAINER */
+.container {
+  display: grid;
+  grid-template-rows: 90vh min-content; }
 
 /* -------------------------------------------------------- HEADER */
 .header {
   position: relative;
-  height: 90vh;
   background-image: linear-gradient(to right bottom, rgba(153, 103, 0, 0.8), rgba(230, 155, 0, 0.8)), url(../img/paella.jpg);
   background-size: cover;
   background-position: center;
-  /* animation: gradient 8s ease infinite; */ }
-
-/* @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 00% 50%;
-	}
-} */
-/* ----------------------------------------- LOGO-BOX */
-.header__logo-box {
-  top: 20px;
-  left: 40px;
-  position: absolute; }
-
-/* ----------------------------------------- LOGO */
-.header__logo {
-  height: 150px; }
-
-/* ----------------------------------------- TEXT-BOX */
-.header__text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  /* ----------------------------------------- LOGO-BOX */
+  /* ----------------------------------------- LOGO */
+  /* ----------------------------------------- TEXT-BOX */ }
+  .header__logo-box {
+    top: 20px;
+    left: 40px;
+    position: absolute; }
+  .header__logo {
+    height: 15rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__link {
+    font-family: "Roboto Slab", serif;
+    color: #5e0606;
+    text-decoration: none; }
 
 /* ----------------------------------------- HEADING-PRIMARY */
 .heading-primary {
   font-family: "Sancreek", cursive;
   color: #5e0606;
-  text-transform: uppercase; }
-
-/* -------------------------- MAIN */
-.heading-primary--main {
-  display: block;
-  font-size: 60rem;
-  font-weight: 400;
-  letter-spacing: 20px;
-  text-align: center; }
-
-/* -------------------------- SUB */
-.heading-primary--sub {
-  display: block;
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 10px; }
+  text-transform: uppercase;
+  /* -------------------------- MAIN */
+  /* -------------------------- SUB */ }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    text-align: center; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1rem; }

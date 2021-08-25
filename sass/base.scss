@@ -8,3 +8,37 @@ $color-secondary-light: #e69b00; // Light gold
 /* -------------------------------------------------------- FONT VARS */
 $font-primary: "Roboto Slab", serif;
 $font-display: "Sancreek", cursive;
+
+/* -------------------------------------------------------- UNIVERSAL SELECTORS */
+/* Selects every element on the page and applies these declarations */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+/* -------------------------------------------------------- HTML */
+html {
+	box-sizing: border-box;
+	/* Making the root font size 10px makes it much easier to convert all the rest of measure units into rem. Default font size is 16px (100%), so 10px is 62.5% */
+	// Defines what 1rem is
+	font-size: 62.5%; // 1rem = 10px
+}
+
+/* -------------------------------------------------------- BODY */
+body {
+	font-family: $font-primary;
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: $color-primary-light;
+	padding: 30px;
+}
+
+/* -------------------------------------------------------- CONTAINER */
+.container {
+	display: grid;
+	grid-template-rows: 90vh min-content;
+}
