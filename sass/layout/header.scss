@@ -62,8 +62,14 @@
 		align-self: center;
 
 		&--btn {
-			font-size: 2rem;
+			font-family: $font-primary;
+			font-weight: 900;
+			font-size: 3rem;
+			color: $color-primary-dark;
+			background-color: transparent;
+			border: 0;
 			margin: 4rem;
+			cursor: pointer;
 		}
 	}
 }
