@@ -1,5 +1,6 @@
 /* -------------------------------------------------------- HEADER */
 .header {
+	grid-column: full-start / full-end;
 	position: relative;
 	font-family: $font-display;
 	color: $color-primary-dark;

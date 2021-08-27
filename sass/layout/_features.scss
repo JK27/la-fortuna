@@ -1,3 +1,5 @@
 .features {
-	background-color: $color-background-light;
+	background-color: teal;
+	grid-column: center-start / center-end;
+	grid-row: 2 / 3;
 }

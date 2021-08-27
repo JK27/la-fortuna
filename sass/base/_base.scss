@@ -18,11 +18,20 @@ html {
 
 /* -------------------------------------------------------- BODY */
 body {
-	padding: 30px;
+	// padding: 30px;
+	padding-top: 30px;
+	background-color: $color-background-light;
 }
 
 /* -------------------------------------------------------- CONTAINER */
 .container {
 	display: grid;
-	grid-template-rows: 90vh min-content;
+	grid-template-rows: 90vh repeat(4, min-content);
+	grid-template-columns:
+		[left-start] 3rem [left-end full-start] 1fr [center-start] repeat(
+			8,
+			[col-start] minmax(min-content, 14rem) [col-end]
+		)
+		[center-end]
+		1fr [full-end right-start] 3rem [right-end];
 }
