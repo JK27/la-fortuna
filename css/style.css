@@ -71,8 +71,37 @@ body {
   grid-row: 2 / 3; }
 
 .footer {
-  background-color: palevioletred;
-  grid-column: left-start / right-end; }
+  background-color: #5e0606;
+  color: #e69b00;
+  grid-column: left-start / right-end;
+  padding: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center; }
+  .footer__social {
+    font-size: 2rem;
+    list-style-type: none; }
+    .footer__social h4::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor; }
+    .footer__social--item {
+      font-weight: 500;
+      margin-top: 2rem;
+      margin-left: 11rem;
+      display: flex;
+      justify-content: start; }
+    .footer__social--link:link, .footer__social--link:visited {
+      text-decoration: none;
+      color: currentColor;
+      display: flex;
+      align-items: center; }
+    .footer__social--icon {
+      height: 2rem;
+      width: 2rem;
+      fill: currentColor;
+      margin-right: 2rem; }
 
 .gallery {
   background-color: rgba(153, 103, 0, 0.2);

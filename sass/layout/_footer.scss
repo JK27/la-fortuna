@@ -1,4 +1,47 @@
 .footer {
-	background-color: palevioletred;
+	background-color: $color-primary-dark;
+	color: $color-secondary-light;
 	grid-column: left-start / right-end;
+	padding: 8rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+
+	// delete
+	// min-height: 50vh;
+
+	&__social {
+		font-size: 2rem;
+		list-style-type: none;
+
+		h4::after {
+			content: "";
+			height: 1px;
+			display: block;
+			background-color: currentColor;
+		}
+
+		&--item {
+			font-weight: 500;
+			margin-top: 2rem;
+			margin-left: 11rem;
+			display: flex;
+			justify-content: start;
+		}
+
+		&--link:link,
+		&--link:visited {
+			text-decoration: none;
+			color: currentColor;
+			display: flex;
+			align-items: center;
+		}
+
+		&--icon {
+			height: 2rem;
+			width: 2rem;
+			fill: currentColor;
+			margin-right: 2rem;
+		}
+	}
 }
