@@ -1,30 +1,32 @@
 .footer {
+	font-size: 1.6rem;
 	background-color: $color-primary-dark;
 	color: $color-secondary-light;
 	grid-column: left-start / right-end;
-	padding: 8rem;
+	min-height: 60vh;
+	padding: 5rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	text-align: center;
 
+	////////////////////////////////////////// H3
+	h3::after {
+		content: "";
+		height: 1px;
+		width: 50%;
+		margin-left: 25%;
+		display: block;
+		background-color: currentColor;
+	}
+
+	////////////////////////////////////////// SOCIAL
 	&__social {
-		font-size: 1.6rem;
 		list-style-type: none;
 
-		h3::after {
-			content: "";
-			height: 1px;
-			width: 50%;
-			margin-left: 25%;
-			display: block;
-			background-color: currentColor;
-		}
-
+		////////////////////////////// ITEM
 		&--item {
 			font-weight: 400;
 			margin-top: 2rem;
-
-			position: relative;
 
 			&::after {
 				content: "";
@@ -41,6 +43,7 @@
 			}
 		}
 
+		////////////////////////////// LINK
 		&--link {
 			position: relative;
 
@@ -51,11 +54,27 @@
 			}
 		}
 
+		////////////////////////////// ICON
 		&--icon {
 			height: 1.6rem;
 			width: 1.6rem;
 			fill: currentColor;
 			margin-right: 2rem;
 		}
+	}
+
+	////////////////////////////////////////// LOCATION
+	.location {
+		&__address {
+			font-size: 1.5rem;
+			margin-top: 2rem;
+		}
+	}
+
+	#map {
+		height: 40%;
+		width: 80%;
+		margin-top: 2rem;
+		margin-left: 10%;
 	}
 }
