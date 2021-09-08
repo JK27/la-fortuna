@@ -19,6 +19,11 @@
 		background-color: currentColor;
 	}
 
+	&__text:nth-last-of-type(2) {
+		/* Adds margin-top to only the first of type p.footer__location__address */
+		margin-top: $footer-gap-margin;
+	}
+
 	////////////////////////////////////////// SOCIAL
 	&__social {
 		ul {
@@ -27,8 +32,7 @@
 
 		////////////////////////////// ITEM
 		&--item {
-			margin-top: $footer-margin-top;
-			position: relative;
+			margin-top: $footer-gap-margin;
 
 			&::after {
 				content: "";
@@ -38,7 +42,7 @@
 				width: 30%;
 				margin-left: 35%;
 				height: 1px;
-				background-color: currentColor;
+				background-color: $color-secondary-light;
 				transition: opacity 300ms, transform 300ms;
 				opacity: 1;
 				transform: scale(0);
@@ -49,6 +53,7 @@
 			&:hover::after {
 				transform: translate3d(0, 0.2em, 0);
 				transform: scale(1);
+				color: currentColor;
 			}
 		}
 
@@ -56,25 +61,43 @@
 		&--link {
 			position: relative;
 
+			display: grid;
+			grid-template-columns: 6fr 7fr; // Makes content look centered on grid
+
+			align-items: stretch;
+
 			&:link,
 			&:visited {
 				text-decoration: none;
 				color: currentColor;
 			}
+
+			svg {
+				align-self: center;
+				justify-self: right;
+				margin-right: 2rem;
+			}
+
+			span {
+				align-self: center;
+				justify-self: left;
+			}
 		}
+	}
+
+	.copyright {
+		font-size: 1rem;
+		margin-top: $footer-gap-margin;
 	}
 
 	////////////////////////////////////////// LOCATION
 	&__location {
-		&--address {
-			margin-top: $footer-margin-top;
-		}
 	}
 
 	#map {
-		height: 40%;
+		height: 50%;
 		width: 80%;
-		margin-top: $footer-margin-top;
+		margin-top: $footer-gap-margin;
 		margin-left: 10%;
 	}
 
@@ -86,7 +109,11 @@
 
 		////////////////////////////// ITEM
 		&--item {
-			margin-top: $footer-margin-top;
+			margin-top: $footer-gap-margin;
+
+			&:last-of-type {
+				margin-bottom: $footer-gap-margin;
+			}
 		}
 	}
 }

@@ -94,11 +94,13 @@ body {
     margin-left: 25%;
     display: block;
     background-color: currentColor; }
+  .footer__text:nth-last-of-type(2) {
+    /* Adds margin-top to only the first of type p.footer__location__address */
+    margin-top: 2rem; }
   .footer__social ul {
     list-style-type: none; }
   .footer__social--item {
-    margin-top: 2rem;
-    position: relative; }
+    margin-top: 2rem; }
     .footer__social--item::after {
       content: "";
       position: absolute;
@@ -107,23 +109,35 @@ body {
       width: 30%;
       margin-left: 35%;
       height: 1px;
-      background-color: currentColor;
+      background-color: #e69b00;
       transition: opacity 300ms, transform 300ms;
       opacity: 1;
       transform: scale(0);
       transform-origin: center; }
     .footer__social--item:focus::after, .footer__social--item:hover::after {
       transform: translate3d(0, 0.2em, 0);
-      transform: scale(1); }
+      transform: scale(1);
+      color: currentColor; }
   .footer__social--link {
-    position: relative; }
+    position: relative;
+    display: grid;
+    grid-template-columns: 6fr 7fr;
+    align-items: stretch; }
     .footer__social--link:link, .footer__social--link:visited {
       text-decoration: none;
       color: currentColor; }
-  .footer__location--address {
+    .footer__social--link svg {
+      align-self: center;
+      justify-self: right;
+      margin-right: 2rem; }
+    .footer__social--link span {
+      align-self: center;
+      justify-self: left; }
+  .footer .copyright {
+    font-size: 1rem;
     margin-top: 2rem; }
   .footer #map {
-    height: 40%;
+    height: 50%;
     width: 80%;
     margin-top: 2rem;
     margin-left: 10%; }
@@ -131,6 +145,8 @@ body {
     list-style-type: none; }
   .footer__contact--item {
     margin-top: 2rem; }
+    .footer__contact--item:last-of-type {
+      margin-bottom: 2rem; }
 
 .gallery {
   background-color: rgba(153, 103, 0, 0.2);
