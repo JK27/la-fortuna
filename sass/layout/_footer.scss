@@ -27,19 +27,27 @@
 		&--item {
 			font-weight: 400;
 			margin-top: 2rem;
+			position: relative;
 
 			&::after {
 				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 30%;
+				margin-left: 35%;
 				height: 1px;
-				width: 50%;
-				margin-left: 25%;
-				display: block;
 				background-color: currentColor;
-				transform: scaleX(0);
+				transition: opacity 300ms, transform 300ms;
+				opacity: 1;
+				transform: scale(0);
+				transform-origin: center;
 			}
 
+			&:focus::after,
 			&:hover::after {
-				transform: scaleX(1);
+				transform: translate3d(0, 0.2em, 0);
+				transform: scale(1);
 			}
 		}
 

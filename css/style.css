@@ -91,17 +91,24 @@ body {
     list-style-type: none; }
     .footer__social--item {
       font-weight: 400;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      position: relative; }
       .footer__social--item::after {
         content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+        margin-left: 35%;
         height: 1px;
-        width: 50%;
-        margin-left: 25%;
-        display: block;
         background-color: currentColor;
-        transform: scaleX(0); }
-      .footer__social--item:hover::after {
-        transform: scaleX(1); }
+        transition: opacity 300ms, transform 300ms;
+        opacity: 1;
+        transform: scale(0);
+        transform-origin: center; }
+      .footer__social--item:focus::after, .footer__social--item:hover::after {
+        transform: translate3d(0, 0.2em, 0);
+        transform: scale(1); }
     .footer__social--link {
       position: relative; }
       .footer__social--link:link, .footer__social--link:visited {
