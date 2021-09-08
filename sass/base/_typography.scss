@@ -6,3 +6,24 @@ body {
 	line-height: 1.6;
 	color: $color-primary-light;
 }
+
+/* -------------------------------------------------------- HEADINGS */
+%heading {
+	font-weight: 700;
+}
+
+.section-heading {
+	@extend %heading;
+
+	font-size: 4rem;
+	font-style: italic;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.section-subtitle {
+	font-size: 3rem;
+	font-style: italic;
+	text-align: center;
+	margin-top: 1rem;
+}

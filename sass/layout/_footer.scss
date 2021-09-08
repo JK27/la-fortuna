@@ -33,14 +33,15 @@
 		////////////////////////////// ITEM
 		&--item {
 			margin-top: $footer-gap-margin;
+			position: relative;
 
 			&::after {
 				content: "";
 				position: absolute;
 				bottom: 0;
 				left: 0;
-				width: 30%;
-				margin-left: 35%;
+				width: 40%;
+				margin-left: 30%; // Centres underline
 				height: 1px;
 				background-color: $color-secondary-light;
 				transition: opacity 300ms, transform 300ms;
@@ -51,9 +52,7 @@
 
 			&:focus::after,
 			&:hover::after {
-				transform: translate3d(0, 0.2em, 0);
 				transform: scale(1);
-				color: currentColor;
 			}
 		}
 
@@ -87,7 +86,7 @@
 
 	.copyright {
 		font-size: 1rem;
-		margin-top: $footer-gap-margin;
+		margin-top: 1.5rem;
 	}
 
 	////////////////////////////////////////// LOCATION

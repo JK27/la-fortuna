@@ -1,5 +1,5 @@
 .gallery {
-	background-color: rgba($color-secondary-dark, 0.2);
+	background-color: $color-background-dark;
 	grid-rows: 3 / 4;
 	grid-column: left-start / right-end;
 
