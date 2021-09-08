@@ -21,12 +21,13 @@
 
 	////////////////////////////////////////// SOCIAL
 	&__social {
-		list-style-type: none;
+		ul {
+			list-style-type: none;
+		}
 
 		////////////////////////////// ITEM
 		&--item {
-			font-weight: 400;
-			margin-top: 2rem;
+			margin-top: $footer-margin-top;
 			position: relative;
 
 			&::after {
@@ -61,28 +62,31 @@
 				color: currentColor;
 			}
 		}
-
-		////////////////////////////// ICON
-		&--icon {
-			height: 1.6rem;
-			width: 1.6rem;
-			fill: currentColor;
-			margin-right: 2rem;
-		}
 	}
 
 	////////////////////////////////////////// LOCATION
-	.location {
-		&__address {
-			font-size: 1.5rem;
-			margin-top: 2rem;
+	&__location {
+		&--address {
+			margin-top: $footer-margin-top;
 		}
 	}
 
 	#map {
 		height: 40%;
 		width: 80%;
-		margin-top: 2rem;
+		margin-top: $footer-margin-top;
 		margin-left: 10%;
+	}
+
+	////////////////////////////////////////// CONTACT
+	&__contact {
+		ul {
+			list-style-type: none;
+		}
+
+		////////////////////////////// ITEM
+		&--item {
+			margin-top: $footer-margin-top;
+		}
 	}
 }
