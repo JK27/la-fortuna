@@ -18,15 +18,18 @@ html {
 
 /* -------------------------------------------------------- BODY */
 body {
-	// padding: 30px;
 	padding-top: 30px;
-	background-color: $color-background-light;
+	background-image: linear-gradient(
+			$color-background-light,
+			$color-background-light
+		),
+		url(../../img/arab_tile/arab_tile_@2X.png);
 }
 
 /* -------------------------------------------------------- CONTAINER */
 .container {
 	display: grid;
-	grid-template-rows: 90vh repeat(4, min-content);
+	grid-template-rows: 90vh repeat(5, min-content);
 	grid-template-columns:
 		[left-start] 3rem [left-end full-start] 1fr [center-start] repeat(
 			8,

@@ -1,31 +1,23 @@
 .menus {
+	/* -------------------------------------------- CONTENT */
 	&__content {
-		//delete
-		min-height: 90vh;
-
 		grid-column: full-start / col-end 5;
 		padding: 6rem 8vw;
 
+		/* ------------------------------------- TEXT */
 		&--text {
 			font-weight: 500;
 			margin-top: 2rem;
 		}
 	}
-	&__img {
-		grid-column: col-start 6 / full-end;
-		height: 100%;
-		background-image: url(../img/tapas.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		filter: opacity(0.2);
-	}
 
+	/* -------------------------------------------- LINKS */
 	&__links {
 		text-align: center;
 		display: grid;
 		grid-template-columns: repeat(2, auto);
 
+		/* ------------------------------------- LINK */
 		&--link {
 			font-size: 2rem;
 			font-weight: 600;
@@ -41,13 +33,14 @@
 				color: currentColor;
 			}
 
+			/* ------------------------- AFTER */
 			&::after {
 				content: "";
 				position: absolute;
 				bottom: 0;
 				left: 0;
-				width: 40%;
-				margin-left: 30%; // Centres underline
+				width: 70%;
+				margin-left: 15%; // Centres underline
 				height: 2px;
 				background-color: currentColor;
 				transition: opacity 300ms, transform 300ms;
@@ -61,5 +54,14 @@
 				transform: scale(1);
 			}
 		}
+	}
+	/* -------------------------------------------- IMAGE */
+	&__picture {
+		grid-column: col-start 6 / full-end;
+		padding-top: 1.5rem; // To replicate gap with gallery section
+	}
+
+	&__img {
+		width: 100%;
 	}
 }

@@ -19,12 +19,12 @@ html {
 /* -------------------------------------------------------- BODY */
 body {
   padding-top: 30px;
-  background-color: #99670033; }
+  background-image: linear-gradient(#9967004d, #9967004d), url(../../img/arab_tile/arab_tile_@2X.png); }
 
 /* -------------------------------------------------------- CONTAINER */
 .container {
   display: grid;
-  grid-template-rows: 90vh repeat(4, min-content);
+  grid-template-rows: 90vh repeat(5, min-content);
   grid-template-columns: [left-start] 3rem [left-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end right-start] 3rem [right-end]; }
 
 /* -------------------------------------------------------- BODY */
@@ -89,53 +89,6 @@ body {
   width: 1.6rem;
   fill: currentColor;
   margin-right: 2rem; }
-
-.menus__content {
-  min-height: 90vh;
-  grid-column: full-start / col-end 5;
-  padding: 6rem 8vw; }
-  .menus__content--text {
-    font-weight: 500;
-    margin-top: 2rem; }
-
-.menus__img {
-  grid-column: col-start 6 / full-end;
-  height: 100%;
-  background-image: url(../img/tapas.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: opacity(0.2); }
-
-.menus__links {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, auto); }
-  .menus__links--link {
-    font-size: 2rem;
-    font-weight: 600;
-    color: currentColor;
-    text-decoration: none;
-    margin-top: 3rem;
-    position: relative; }
-    .menus__links--link:link, .menus__links--link:visited {
-      text-decoration: none;
-      color: currentColor; }
-    .menus__links--link::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 40%;
-      margin-left: 30%;
-      height: 2px;
-      background-color: currentColor;
-      transition: opacity 300ms, transform 300ms;
-      opacity: 1;
-      transform: scale(0);
-      transform-origin: center; }
-    .menus__links--link:focus::after, .menus__links--link:hover::after {
-      transform: scale(1); }
 
 .footer {
   font-size: 1.6rem;
@@ -208,8 +161,7 @@ body {
       margin-bottom: 2rem; }
 
 .gallery {
-  background-color: #a60b0b1a;
-  grid-rows: 3 / 4;
+  grid-row: 3 / 4;
   grid-column: left-start / right-end;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -322,3 +274,56 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
     align-self: center; }
+
+.menus {
+  /* -------------------------------------------- CONTENT */
+  /* -------------------------------------------- LINKS */
+  /* -------------------------------------------- IMAGE */ }
+  .menus__content {
+    grid-column: full-start / col-end 5;
+    padding: 6rem 8vw;
+    /* ------------------------------------- TEXT */ }
+    .menus__content--text {
+      font-weight: 500;
+      margin-top: 2rem; }
+  .menus__links {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* ------------------------------------- LINK */ }
+    .menus__links--link {
+      font-size: 2rem;
+      font-weight: 600;
+      color: currentColor;
+      text-decoration: none;
+      margin-top: 3rem;
+      position: relative;
+      /* ------------------------- AFTER */ }
+      .menus__links--link:link, .menus__links--link:visited {
+        text-decoration: none;
+        color: currentColor; }
+      .menus__links--link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 70%;
+        margin-left: 15%;
+        height: 2px;
+        background-color: currentColor;
+        transition: opacity 300ms, transform 300ms;
+        opacity: 1;
+        transform: scale(0);
+        transform-origin: center; }
+      .menus__links--link:focus::after, .menus__links--link:hover::after {
+        transform: scale(1); }
+  .menus__picture {
+    grid-column: col-start 6 / full-end;
+    padding-top: 1.5rem; }
+  .menus__img {
+    width: 100%; }
+
+.reviews {
+  grid-row: 4 / 5;
+  grid-column: left-start / right-end;
+  min-height: 90vh; }

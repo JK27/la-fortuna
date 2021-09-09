@@ -1,6 +1,6 @@
 .gallery {
-	background-color: $color-background-dark;
-	grid-rows: 3 / 4;
+	// background-color: $color-background-dark;
+	grid-row: 3 / 4;
 	grid-column: left-start / right-end;
 
 	display: grid;
