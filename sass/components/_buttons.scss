@@ -19,14 +19,14 @@
 	}
 
 	&:hover {
-		background-color: $color-primary-dark;
+		background-color: $color-primary;
 		color: $color-secondary-dark;
-		box-shadow: 0 1rem 2rem rgba($color-primary-dark, 0.5);
+		box-shadow: 0 1rem 2rem rgba($color-primary, 0.5);
 		transform: translateY(-0.8rem);
 	}
 
 	&:active {
-		box-shadow: 0 0.5rem 1rem rgba($color-primary-dark, 0.5);
+		box-shadow: 0 0.5rem 1rem rgba($color-primary, 0.5);
 		transform: translateY(0);
 	}
 }

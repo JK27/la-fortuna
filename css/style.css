@@ -19,7 +19,7 @@ html {
 /* -------------------------------------------------------- BODY */
 body {
   padding-top: 30px;
-  background-image: linear-gradient(#9967004d, #9967004d), url(../../img/arab_tile/arab_tile_@2X.png); }
+  background-image: linear-gradient(#e69b004d, #e69b004d), url(../../img/arab_tile/arab_tile_@2X.png); }
 
 /* -------------------------------------------------------- CONTAINER */
 .container {
@@ -33,7 +33,7 @@ body {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.6;
-  color: #a60b0b; }
+  color: #5e0606; }
 
 /* -------------------------------------------------------- HEADINGS */
 .section-heading {
@@ -89,6 +89,31 @@ body {
   width: 1.6rem;
   fill: currentColor;
   margin-right: 2rem; }
+
+.features {
+  grid-row: 4 / 5;
+  grid-column: center-start / center-end;
+  padding: 12rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 6rem;
+  align-items: flex-start; }
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem; }
+  .feature__icon {
+    fill: #5e0606;
+    width: 5rem;
+    height: 5rem;
+    grid-row: 1 / span 2; }
+  .feature__heading {
+    text-decoration: underline; }
+  .feature__text {
+    font-size: 1.7rem;
+    font-weight: 400; }
 
 .footer {
   font-size: 1.6rem;
@@ -307,8 +332,8 @@ body {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 70%;
-        margin-left: 15%;
+        width: 50%;
+        margin-left: 25%;
         height: 2px;
         background-color: currentColor;
         transition: opacity 300ms, transform 300ms;
@@ -322,8 +347,3 @@ body {
     padding-top: 1.5rem; }
   .menus__img {
     width: 100%; }
-
-.reviews {
-  grid-row: 4 / 5;
-  grid-column: left-start / right-end;
-  min-height: 90vh; }
