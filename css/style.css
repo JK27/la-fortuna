@@ -1,8 +1,8 @@
 /* -------------------------------------------------------- COLOUR VARS */
 /* -------------------------------------------------------- FONT VARS */
 /* -------------------------------------------------------- MARGIN VARS */
-/* -------------------------------------------------------- UNIVERSAL SELECTORS */
-/* Selects every element on the page and applies these declarations */
+/* -------------------------------------------------------- BASIC RESET */
+/*  Selects every element on the page and applies these declarations to make every browser display the page on the same way, removing the default margins and paddings of the browswer */
 *,
 *::after,
 *::before {
@@ -18,7 +18,7 @@ html {
 
 /* -------------------------------------------------------- BODY */
 body {
-  padding-top: 30px;
+  padding-top: 3rem;
   background-image: linear-gradient(#e69b004d, #e69b004d), url(../../img/arab_tile/arab_tile_@2X.png); }
 
 /* -------------------------------------------------------- CONTAINER */
@@ -112,7 +112,6 @@ body {
   .feature__heading {
     text-decoration: underline; }
   .feature__text {
-    font-size: 1.7rem;
     font-weight: 400; }
 
 .footer {
@@ -159,7 +158,8 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: 6fr 7fr;
-    align-items: stretch; }
+    align-items: stretch;
+    /* Aligning and justifying the items make them look centered withing the grid column */ }
     .footer__social--link:link, .footer__social--link:visited {
       text-decoration: none;
       color: currentColor; }
@@ -171,7 +171,7 @@ body {
       align-self: center;
       justify-self: left; }
   .footer .copyright {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 1.5rem; }
   .footer #map {
     height: 50%;
@@ -244,16 +244,14 @@ body {
 /* -------------------------------------------------------- HEADER */
 .header {
   grid-column: full-start / full-end;
-  position: relative;
+  grid-row: 1 / 2;
   font-family: "Sancreek", cursive;
   color: #5e0606;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   background-image: linear-gradient(to right bottom, rgba(153, 103, 0, 0.8), rgba(230, 155, 0, 0.8)), url(../img/paella.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
   display: grid;
   grid-template-rows: auto;
   /* -------------------------------------------- HEADER BOX */
@@ -266,14 +264,13 @@ body {
     align-self: flex-end; }
   .header__logo {
     height: 15rem;
-    top: 20px;
-    left: 40px;
     align-self: center;
     justify-self: right; }
   .header__heading {
     text-transform: uppercase;
     justify-self: left;
     /* --------------------------- MAIN */
+    /* --------------------------- SMALL */
     /* --------------------------- SUB */ }
     .header__heading--main {
       font-size: 6rem;
@@ -317,11 +314,11 @@ body {
     grid-template-columns: repeat(2, auto);
     /* ------------------------------------- LINK */ }
     .menus__links--link {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 600;
       color: currentColor;
       text-decoration: none;
-      margin-top: 3rem;
+      margin-top: 4.5rem;
       position: relative;
       /* ------------------------- AFTER */ }
       .menus__links--link:link, .menus__links--link:visited {
@@ -332,8 +329,8 @@ body {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 50%;
-        margin-left: 25%;
+        width: 90%;
+        margin-left: 5%;
         height: 2px;
         background-color: currentColor;
         transition: opacity 300ms, transform 300ms;
@@ -342,6 +339,8 @@ body {
         transform-origin: center; }
       .menus__links--link:focus::after, .menus__links--link:hover::after {
         transform: scale(1); }
+      .menus__links--link:visited::after {
+        transform: scale(0); }
   .menus__picture {
     grid-column: col-start 6 / full-end;
     padding-top: 1.5rem; }

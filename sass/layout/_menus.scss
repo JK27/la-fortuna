@@ -19,12 +19,11 @@
 
 		/* ------------------------------------- LINK */
 		&--link {
-			font-size: 2rem;
+			font-size: 2.5rem;
 			font-weight: 600;
 			color: currentColor;
 			text-decoration: none;
-			margin-top: 3rem;
-
+			margin-top: 4.5rem;
 			position: relative;
 
 			&:link,
@@ -39,8 +38,8 @@
 				position: absolute;
 				bottom: 0;
 				left: 0;
-				width: 50%;
-				margin-left: 25%; // Centres underline
+				width: 90%;
+				margin-left: 5%; // Centres underline
 				height: 2px;
 				background-color: currentColor;
 				transition: opacity 300ms, transform 300ms;
@@ -52,6 +51,10 @@
 			&:focus::after,
 			&:hover::after {
 				transform: scale(1);
+			}
+
+			&:visited::after {
+				transform: scale(0);
 			}
 		}
 	}

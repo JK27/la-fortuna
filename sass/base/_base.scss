@@ -1,5 +1,5 @@
-/* -------------------------------------------------------- UNIVERSAL SELECTORS */
-/* Selects every element on the page and applies these declarations */
+/* -------------------------------------------------------- BASIC RESET */
+/*  Selects every element on the page and applies these declarations to make every browser display the page on the same way, removing the default margins and paddings of the browswer */
 *,
 *::after,
 *::before {
@@ -18,7 +18,7 @@ html {
 
 /* -------------------------------------------------------- BODY */
 body {
-	padding-top: 30px;
+	padding-top: 3rem; // Matches the 3rem gap on each side of header
 	background-image: linear-gradient(
 			$color-background-light,
 			$color-background-light

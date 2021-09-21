@@ -1,12 +1,9 @@
 /* -------------------------------------------------------- HEADER */
 .header {
-	grid-column: full-start / full-end;
-	position: relative;
+	grid-column: full-start / full-end; // Leaves 3rem gap at edges
+	grid-row: 1 / 2;
 	font-family: $font-display;
 	color: $color-primary;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	text-align: center;
 	background-image: linear-gradient(
 			to right bottom,
@@ -15,7 +12,8 @@
 		),
 		url(../img/paella.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: center; // Makes image always centered on all screen sizes
+	position: relative;
 
 	display: grid;
 	grid-template-rows: auto;
@@ -24,22 +22,20 @@
 	&__box {
 		display: grid;
 		grid-template-columns: repeat(2, auto);
-		align-self: flex-end;
+		align-self: flex-end; // Brings contents to bottom of row, looking centered in header
 	}
 
 	/* --------------------------------------- LOGO */
 	&__logo {
 		height: 15rem;
-		top: 20px;
-		left: 40px;
 		align-self: center;
-		justify-self: right;
+		justify-self: right; // Brings logo to center of header
 	}
 
 	/* --------------------------------------- HEADING */
 	&__heading {
 		text-transform: uppercase;
-		justify-self: left;
+		justify-self: left; // Brings heading to center of header
 		/* --------------------------- MAIN */
 		&--main {
 			font-size: 6rem;
@@ -47,7 +43,7 @@
 			letter-spacing: 2rem;
 			margin-left: 1rem;
 		}
-
+		/* --------------------------- SMALL */
 		&--small {
 			display: grid;
 			grid-template-columns: 1fr max-content 1fr;

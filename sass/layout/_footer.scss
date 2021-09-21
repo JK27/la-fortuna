@@ -71,6 +71,7 @@
 				color: currentColor;
 			}
 
+			/* Aligning and justifying the items make them look centered withing the grid column */
 			svg {
 				align-self: center;
 				justify-self: right;
@@ -85,14 +86,11 @@
 	}
 
 	.copyright {
-		font-size: 1rem;
+		font-size: 1.2rem;
 		margin-top: 1.5rem;
 	}
 
-	////////////////////////////////////////// LOCATION
-	&__location {
-	}
-
+	////////////////////////////////////////// MAP
 	#map {
 		height: 50%;
 		width: 80%;
