@@ -18,6 +18,10 @@
 		animation: moveInBottom 2s ease;
 
 		/* ------------------------------ @MEDIA */
+		@include respond(xl) {
+			font-size: 4rem;
+		}
+
 		@include respond(desktop) {
 			font-size: 2rem;
 		}

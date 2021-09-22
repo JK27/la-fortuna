@@ -1,7 +1,8 @@
 /* ---------------------------------------------- @MEDIA MANAGER */
 /* BREAKPOINTS
-112.5em		->		1801px +			->		XL desktop
-***** [1201 - 1800px]:  Desktop (default styles apply) *****
+131.25em	->		2101px +			->		4K
+112.5em		->		1801 - 2100px	->		XL desktop
+***** [1201 - 1800px]			(default styles apply) *****
 75em			->		1025 - 1200px	->		Desktop
 64em			->		769 - 1024px	->		Laptop
 48em			->		601 - 768px		->		Tablet landscape
@@ -10,6 +11,7 @@
 20em			->		0 - 320px			->		XS
  
 $breakpoint arg choices:
+- fourk
 - xl
 - desktop
 - laptop
@@ -28,11 +30,18 @@ ORDER:
 */
 
 @mixin respond($breakpoint) {
+	/*----------------------------------- 4K */
+	@if $breakpoint == fourk {
+		@media (min-width: 131.25em) {
+			@content;
+		} // min-width: 2100px
+	}
+
 	/*----------------------------------- XL */
 	@if $breakpoint == xl {
-		@media (min-width: 112.5em) {
+		@media (min-width: 112.5em) and (max-width: 131.24em) {
 			@content;
-		} // max-width: 1800px
+		} // min-width: 1800px
 	}
 
 	/*----------------------------------- DESKTOP */

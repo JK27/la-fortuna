@@ -41,6 +41,10 @@
 		height: 15rem;
 		align-self: center;
 		justify-self: right; // Brings logo to center of header
+
+		@include respond(xl) {
+			height: 25rem;
+		}
 	}
 
 	/* --------------------------------------- HEADING */
@@ -55,6 +59,10 @@
 			margin-left: 1rem;
 
 			/* ------------------------------ @MEDIA */
+			@include respond(xl) {
+				font-size: 9rem;
+			}
+
 			@include respond(desktop) {
 				font-size: 5rem;
 			}
@@ -82,6 +90,10 @@
 			}
 
 			/* --------------- @MEDIA */
+			@include respond(xl) {
+				font-size: 3rem;
+			}
+
 			@include respond(desktop) {
 				font-size: 1rem;
 			}
@@ -94,6 +106,10 @@
 			letter-spacing: 1rem;
 
 			/* ----------------- @MEDIA */
+			@include respond(xl) {
+				font-size: 6rem;
+			}
+
 			@include respond(desktop) {
 				font-size: 3rem;
 			}

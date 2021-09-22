@@ -21,6 +21,14 @@ body {
 	text-decoration: underline;
 
 	/* ----------------------------- @MEDIA */
+	@include respond(fourk) {
+		font-size: 7rem;
+	}
+
+	@include respond(xl) {
+		font-size: 6rem;
+	}
+
 	@include respond(laptop) {
 		font-size: 3.5rem;
 	}
@@ -33,6 +41,14 @@ body {
 	margin-top: 1rem;
 
 	/* ----------------------------- @MEDIA */
+	@include respond(fourk) {
+		font-size: 5rem;
+	}
+
+	@include respond(xl) {
+		font-size: 4rem;
+	}
+
 	@include respond(laptop) {
 		font-size: 2.5rem;
 	}
