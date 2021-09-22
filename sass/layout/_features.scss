@@ -2,11 +2,24 @@
 	grid-row: 4 / 5;
 	grid-column: center-start / center-end;
 
-	padding: 12rem 0;
+	padding: 10rem 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	gap: 6rem;
 	align-items: flex-start;
+
+	/* ----------------------------- @MEDIA */
+	@include respond(laptop) {
+		padding: 8rem 0;
+	}
+
+	@include respond(tab-por) {
+		padding: 6rem 0;
+	}
+
+	@include respond(xs) {
+		grid-column: full-start / full-end;
+	}
 }
 
 ////////////////////////////////////////// FEATURE

@@ -3,10 +3,11 @@
 112.5em		->		1801px +			->		XL desktop
 ***** [1201 - 1800px]:  Desktop (default styles apply) *****
 75em			->		1025 - 1200px	->		Desktop
-64em			->		769 - 1024px	->		Tablet landscape 
-48em			->		601 - 768px		->		Tablet portrait
-37.5em		->		417 - 600px			->		Mobile
-26em			->		0 - 416px			->		XS
+64em			->		769 - 1024px	->		Laptop
+48em			->		601 - 768px		->		Tablet landscape
+37.5em		->		417 - 600px		->		Tablet portrait
+26em			->		321 - 416px		->		Mobile
+20em			->		0 - 320px			->		XS
  
 $breakpoint arg choices:
 - xl
@@ -62,10 +63,17 @@ ORDER:
 		} // max-width: 600px
 	}
 
-	// 	/*----------------------------------- XS */
-	@if $breakpoint == xs {
+	/*----------------------------------- MOBILE */
+	@if $breakpoint == mobile {
 		@media (max-width: 26em) {
 			@content;
 		} // max-width: 416px
+	}
+
+	/*----------------------------------- XS */
+	@if $breakpoint == xs {
+		@media (max-width: 20em) {
+			@content;
+		} // max-width: 320px
 	}
 }

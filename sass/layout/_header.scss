@@ -59,7 +59,7 @@
 				font-size: 5rem;
 			}
 
-			@include respond(xs) {
+			@include respond(mobile) {
 				font-size: 4rem;
 				letter-spacing: 1rem;
 			}
@@ -98,7 +98,7 @@
 				font-size: 3rem;
 			}
 
-			@include respond(xs) {
+			@include respond(mobile) {
 				font-size: 3rem;
 				letter-spacing: normal;
 			}
