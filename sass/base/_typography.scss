@@ -19,6 +19,11 @@ body {
 	font-style: italic;
 	text-align: center;
 	text-decoration: underline;
+
+	/* ----------------------------- @MEDIA */
+	@include respond(tab-lan) {
+		font-size: 3.5rem;
+	}
 }
 
 .section-subtitle {
@@ -26,4 +31,9 @@ body {
 	font-style: italic;
 	text-align: center;
 	margin-top: 1rem;
+
+	/* ----------------------------- @MEDIA */
+	@include respond(tab-lan) {
+		font-size: 2.5rem;
+	}
 }

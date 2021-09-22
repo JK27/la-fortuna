@@ -1,3 +1,27 @@
+/* ---------------------------------------------- @MEDIA MANAGER */
+/* BREAKPOINTS
+1801px +          XL desktop
+[1201 - 1800px]:  Desktop (default styles apply)
+1025 - 1200px:    Laptop
+769 - 1024px: 		Tablet landscape 
+601 - 768px:      Tablet portrait
+0 - 600px:        Mobile
+ 
+$breakpoint arg choices:
+- xl
+- laptop
+- tab-lan
+- tab-por
+- mobile
+
+ORDER:
+> Base and typography
+> General layout and grid 
+> Page layout
+> Components
+
+1em = 16 px
+*/
 /* -------------------------------------------------------- COLOUR VARS */
 /* -------------------------------------------------------- FONT VARS */
 /* -------------------------------------------------------- MARGIN VARS */
@@ -14,7 +38,31 @@
 html {
   box-sizing: border-box;
   /* Making the root font size 10px makes it much easier to convert all the rest of measure units into rem. Default font size is 16px (100%), so 10px is 62.5% */
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /*----------------------------------- XL */
+  /*----------------------------------- LAPTOP */
+  /*----------------------------------- TABLET LANDSCAPE */
+  /*----------------------------------- TABLET PORTRAIT */
+  /*----------------------------------- MOBILE */
+  /*----------------------------------- XL */
+  /*----------------------------------- LAPTOP */
+  /*----------------------------------- TABLET LANDSCAPE */
+  /*----------------------------------- TABLET PORTRAIT */
+  /*----------------------------------- MOBILE */
+  /*----------------------------------- XL */
+  /*----------------------------------- LAPTOP */
+  /*----------------------------------- TABLET LANDSCAPE */
+  /*----------------------------------- TABLET PORTRAIT */
+  /*----------------------------------- MOBILE */ }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 64em) {
+    html {
+      font-size: 50%; } }
 
 /* -------------------------------------------------------- BODY */
 body {
@@ -25,7 +73,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: 90vh repeat(5, min-content);
-  grid-template-columns: [left-start] 3rem [left-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end right-start] 3rem [right-end]; }
+  grid-template-columns: [left-start] 3rem [left-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end right-start] 3rem [right-end]; }
 
 /* -------------------------------------------------------- BODY */
 body {
@@ -43,13 +91,31 @@ body {
   font-size: 4rem;
   font-style: italic;
   text-align: center;
-  text-decoration: underline; }
+  text-decoration: underline;
+  /* ----------------------------- @MEDIA */
+  /*----------------------------------- XL */
+  /*----------------------------------- LAPTOP */
+  /*----------------------------------- TABLET LANDSCAPE */
+  /*----------------------------------- TABLET PORTRAIT */
+  /*----------------------------------- MOBILE */ }
+  @media (max-width: 64em) {
+    .section-heading {
+      font-size: 3.5rem; } }
 
 .section-subtitle {
   font-size: 3rem;
   font-style: italic;
   text-align: center;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  /* ----------------------------- @MEDIA */
+  /*----------------------------------- XL */
+  /*----------------------------------- LAPTOP */
+  /*----------------------------------- TABLET LANDSCAPE */
+  /*----------------------------------- TABLET PORTRAIT */
+  /*----------------------------------- MOBILE */ }
+  @media (max-width: 64em) {
+    .section-subtitle {
+      font-size: 2.5rem; } }
 
 /* -------------------------------------------------------- BTN LINK */
 .btn-link {
@@ -294,7 +360,7 @@ body {
       letter-spacing: 1rem; }
   .header__links {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     align-self: center; }
 
 .menus {
@@ -304,7 +370,15 @@ body {
   .menus__content {
     grid-column: full-start / col-end 5;
     padding: 6rem 8vw;
+    /*----------------------------------- XL */
+    /*----------------------------------- LAPTOP */
+    /*----------------------------------- TABLET LANDSCAPE */
+    /*----------------------------------- TABLET PORTRAIT */
+    /*----------------------------------- MOBILE */
     /* ------------------------------------- TEXT */ }
+    @media (max-width: 37.5em) {
+      .menus__content {
+        grid-column: full-start / full-end; } }
     .menus__content--text {
       font-weight: 500;
       margin-top: 2rem; }
@@ -312,7 +386,18 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    /* ------------------------------------- LINK */ }
+    /* ------------------------------------- LINK */
+    /* --------------------------- @MEDIA */
+    /*----------------------------------- XL */
+    /*----------------------------------- LAPTOP */
+    /*----------------------------------- TABLET LANDSCAPE */
+    /*----------------------------------- TABLET PORTRAIT */
+    /*----------------------------------- MOBILE */
+    /*----------------------------------- XL */
+    /*----------------------------------- LAPTOP */
+    /*----------------------------------- TABLET LANDSCAPE */
+    /*----------------------------------- TABLET PORTRAIT */
+    /*----------------------------------- MOBILE */ }
     .menus__links--link {
       font-size: 2.5rem;
       font-weight: 600;
@@ -320,7 +405,18 @@ body {
       text-decoration: none;
       margin-top: 4.5rem;
       position: relative;
-      /* ------------------------- AFTER */ }
+      /* ------------------------- AFTER */
+      /* ------------------------- @MEDIA */
+      /*----------------------------------- XL */
+      /*----------------------------------- LAPTOP */
+      /*----------------------------------- TABLET LANDSCAPE */
+      /*----------------------------------- TABLET PORTRAIT */
+      /*----------------------------------- MOBILE */
+      /*----------------------------------- XL */
+      /*----------------------------------- LAPTOP */
+      /*----------------------------------- TABLET LANDSCAPE */
+      /*----------------------------------- TABLET PORTRAIT */
+      /*----------------------------------- MOBILE */ }
       .menus__links--link:link, .menus__links--link:visited {
         text-decoration: none;
         color: currentColor; }
@@ -341,8 +437,42 @@ body {
         transform: scale(1); }
       .menus__links--link:visited::after {
         transform: scale(0); }
+      @media (max-width: 64em) {
+        .menus__links--link {
+          font-size: 2rem;
+          margin-top: 3.5rem; } }
+      @media (max-width: 64em) {
+        .menus__links--link {
+          margin-top: 2rem; } }
+    @media (max-width: 48em) {
+      .menus__links {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr); } }
+    @media (max-width: 48em) {
+      .menus__links {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr; } }
   .menus__picture {
     grid-column: col-start 6 / full-end;
-    padding-top: 1.5rem; }
+    padding-top: 1.5rem;
+    /* ----------------------------- @MEDIA */
+    /*----------------------------------- XL */
+    /*----------------------------------- LAPTOP */
+    /*----------------------------------- TABLET LANDSCAPE */
+    /*----------------------------------- TABLET PORTRAIT */
+    /*----------------------------------- MOBILE */ }
+    @media (max-width: 37.5em) {
+      .menus__picture {
+        display: none; } }
   .menus__img {
-    width: 100%; }
+    max-width: 100%;
+    min-height: 100%;
+    /* ----------------------------- @MEDIA */
+    /*----------------------------------- XL */
+    /*----------------------------------- LAPTOP */
+    /*----------------------------------- TABLET LANDSCAPE */
+    /*----------------------------------- TABLET PORTRAIT */
+    /*----------------------------------- MOBILE */ }
+    @media (max-width: 75em) {
+      .menus__img {
+        object-fit: cover; } }

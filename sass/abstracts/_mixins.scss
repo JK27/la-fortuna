@@ -1,0 +1,61 @@
+/* ---------------------------------------------- @MEDIA MANAGER */
+/* BREAKPOINTS
+1801px +          XL desktop
+[1201 - 1800px]:  Desktop (default styles apply)
+1025 - 1200px:    Laptop
+769 - 1024px: 		Tablet landscape 
+601 - 768px:      Tablet portrait
+0 - 600px:        Mobile
+ 
+$breakpoint arg choices:
+- xl
+- laptop
+- tab-lan
+- tab-por
+- mobile
+
+ORDER:
+> Base and typography
+> General layout and grid 
+> Page layout
+> Components
+
+1em = 16 px
+*/
+
+@mixin respond($breakpoint) {
+	/*----------------------------------- XL */
+	@if $breakpoint == xl {
+		@media (min-width: 112.5em) {
+			@content;
+		} // max-width: 1800px
+	}
+
+	/*----------------------------------- LAPTOP */
+	@if $breakpoint == laptop {
+		@media (max-width: 75em) {
+			@content;
+		} // max-width: 1200px
+	}
+
+	/*----------------------------------- TABLET LANDSCAPE */
+	@if $breakpoint == tab-lan {
+		@media (max-width: 64em) {
+			@content;
+		} // max-width: 1024px
+	}
+
+	/*----------------------------------- TABLET PORTRAIT */
+	@if $breakpoint == tab-por {
+		@media (max-width: 48em) {
+			@content;
+		} // max-width: 768px
+	}
+
+	/*----------------------------------- MOBILE */
+	@if $breakpoint == mobile {
+		@media (max-width: 37.5em) {
+			@content;
+		} // max-width: 600px
+	}
+}

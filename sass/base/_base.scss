@@ -14,6 +14,18 @@ html {
 	/* Making the root font size 10px makes it much easier to convert all the rest of measure units into rem. Default font size is 16px (100%), so 10px is 62.5% */
 	// Defines what 1rem is
 	font-size: 62.5%; // 1rem = 10px
+
+	@include respond(xl) {
+		font-size: 75%; // 1rem = 12px
+	}
+
+	@include respond(laptop) {
+		font-size: 56.25%; // 1rem = 9px
+	}
+
+	@include respond(tab-lan) {
+		font-size: 50%; // 1rem = 8px
+	}
 }
 
 /* -------------------------------------------------------- BODY */
@@ -31,10 +43,8 @@ body {
 	display: grid;
 	grid-template-rows: 90vh repeat(5, min-content);
 	grid-template-columns:
-		[left-start] 3rem [left-end full-start] 1fr [center-start] repeat(
-			8,
-			[col-start] minmax(min-content, 14rem) [col-end]
-		)
+		[left-start] 3rem [left-end full-start] minmax(6rem, 1fr)
+		[center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
 		[center-end]
-		1fr [full-end right-start] 3rem [right-end];
+		minmax(6rem, 1fr) [full-end right-start] 3rem [right-end];
 }

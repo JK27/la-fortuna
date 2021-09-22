@@ -71,7 +71,7 @@
 	/* -------------------------------------------- LINKS */
 	&__links {
 		display: grid;
-		grid-template-columns: repeat(3, auto);
+		grid-template-columns: repeat(3, 1fr);
 		align-self: center;
 	}
 }
