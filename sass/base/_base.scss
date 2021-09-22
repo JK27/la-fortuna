@@ -15,15 +15,16 @@ html {
 	// Defines what 1rem is
 	font-size: 62.5%; // 1rem = 10px
 
+	/* ---------------------------------- @MEDIA */
 	@include respond(xl) {
 		font-size: 75%; // 1rem = 12px
 	}
 
-	@include respond(laptop) {
+	@include respond(desktop) {
 		font-size: 56.25%; // 1rem = 9px
 	}
 
-	@include respond(tab-lan) {
+	@include respond(laptop) {
 		font-size: 50%; // 1rem = 8px
 	}
 }
@@ -36,6 +37,11 @@ body {
 			$color-background-light
 		),
 		url(../../img/arab_tile/arab_tile_@2X.png);
+
+	/* ----------------- @MEDIA */
+	@include respond(tab-por) {
+		padding-top: 0;
+	}
 }
 
 /* -------------------------------------------------------- CONTAINER */

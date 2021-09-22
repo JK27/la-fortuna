@@ -16,6 +16,11 @@
 		transition: all 0.5s;
 
 		animation: moveInBottom 2s ease;
+
+		/* ------------------------------ @MEDIA */
+		@include respond(desktop) {
+			font-size: 2rem;
+		}
 	}
 
 	&:hover {

@@ -1,18 +1,21 @@
 /* ---------------------------------------------- @MEDIA MANAGER */
 /* BREAKPOINTS
-1801px +          XL desktop
-[1201 - 1800px]:  Desktop (default styles apply)
-1025 - 1200px:    Laptop
-769 - 1024px: 		Tablet landscape 
-601 - 768px:      Tablet portrait
-0 - 600px:        Mobile
+112.5em		->		1801px +			->		XL desktop
+***** [1201 - 1800px]:  Desktop (default styles apply) *****
+75em			->		1025 - 1200px	->		Desktop
+64em			->		769 - 1024px	->		Tablet landscape 
+48em			->		601 - 768px		->		Tablet portrait
+37.5em		->		417 - 600px			->		Mobile
+26em			->		0 - 416px			->		XS
  
 $breakpoint arg choices:
 - xl
+- desktop
 - laptop
 - tab-lan
 - tab-por
 - mobile
+- xs
 
 ORDER:
 > Base and typography
@@ -31,31 +34,38 @@ ORDER:
 		} // max-width: 1800px
 	}
 
-	/*----------------------------------- LAPTOP */
-	@if $breakpoint == laptop {
+	/*----------------------------------- DESKTOP */
+	@if $breakpoint == desktop {
 		@media (max-width: 75em) {
 			@content;
 		} // max-width: 1200px
 	}
 
-	/*----------------------------------- TABLET LANDSCAPE */
-	@if $breakpoint == tab-lan {
+	/*----------------------------------- LAPTOP */
+	@if $breakpoint == laptop {
 		@media (max-width: 64em) {
 			@content;
 		} // max-width: 1024px
 	}
 
-	/*----------------------------------- TABLET PORTRAIT */
-	@if $breakpoint == tab-por {
+	/*----------------------------------- TABLET LANDSCAPE */
+	@if $breakpoint == tab-lan {
 		@media (max-width: 48em) {
 			@content;
 		} // max-width: 768px
 	}
 
-	/*----------------------------------- MOBILE */
-	@if $breakpoint == mobile {
+	/*----------------------------------- TAB-POR */
+	@if $breakpoint == tab-por {
 		@media (max-width: 37.5em) {
 			@content;
 		} // max-width: 600px
+	}
+
+	// 	/*----------------------------------- XS */
+	@if $breakpoint == xs {
+		@media (max-width: 26em) {
+			@content;
+		} // max-width: 416px
 	}
 }

@@ -1,18 +1,21 @@
 /* ---------------------------------------------- @MEDIA MANAGER */
 /* BREAKPOINTS
-1801px +          XL desktop
-[1201 - 1800px]:  Desktop (default styles apply)
-1025 - 1200px:    Laptop
-769 - 1024px: 		Tablet landscape 
-601 - 768px:      Tablet portrait
-0 - 600px:        Mobile
+112.5em		->		1801px +			->		XL desktop
+***** [1201 - 1800px]:  Desktop (default styles apply) *****
+75em			->		1025 - 1200px	->		Desktop
+64em			->		769 - 1024px	->		Tablet landscape 
+48em			->		601 - 768px		->		Tablet portrait
+37.5em		->		417 - 600px			->		Mobile
+26em			->		0 - 416px			->		XS
  
 $breakpoint arg choices:
 - xl
+- desktop
 - laptop
 - tab-lan
 - tab-por
 - mobile
+- xs
 
 ORDER:
 > Base and typography
@@ -39,21 +42,22 @@ html {
   box-sizing: border-box;
   /* Making the root font size 10px makes it much easier to convert all the rest of measure units into rem. Default font size is 16px (100%), so 10px is 62.5% */
   font-size: 62.5%;
+  /* ---------------------------------- @MEDIA */
   /*----------------------------------- XL */
+  /*----------------------------------- DESKTOP */
   /*----------------------------------- LAPTOP */
   /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TABLET PORTRAIT */
-  /*----------------------------------- MOBILE */
+  /*----------------------------------- TAB-POR */
   /*----------------------------------- XL */
+  /*----------------------------------- DESKTOP */
   /*----------------------------------- LAPTOP */
   /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TABLET PORTRAIT */
-  /*----------------------------------- MOBILE */
+  /*----------------------------------- TAB-POR */
   /*----------------------------------- XL */
+  /*----------------------------------- DESKTOP */
   /*----------------------------------- LAPTOP */
   /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TABLET PORTRAIT */
-  /*----------------------------------- MOBILE */ }
+  /*----------------------------------- TAB-POR */ }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -67,7 +71,16 @@ html {
 /* -------------------------------------------------------- BODY */
 body {
   padding-top: 3rem;
-  background-image: linear-gradient(#e69b004d, #e69b004d), url(../../img/arab_tile/arab_tile_@2X.png); }
+  background-image: linear-gradient(#e69b004d, #e69b004d), url(../../img/arab_tile/arab_tile_@2X.png);
+  /* ----------------- @MEDIA */
+  /*----------------------------------- XL */
+  /*----------------------------------- DESKTOP */
+  /*----------------------------------- LAPTOP */
+  /*----------------------------------- TABLET LANDSCAPE */
+  /*----------------------------------- TAB-POR */ }
+  @media (max-width: 37.5em) {
+    body {
+      padding-top: 0; } }
 
 /* -------------------------------------------------------- CONTAINER */
 .container {
@@ -94,10 +107,10 @@ body {
   text-decoration: underline;
   /* ----------------------------- @MEDIA */
   /*----------------------------------- XL */
+  /*----------------------------------- DESKTOP */
   /*----------------------------------- LAPTOP */
   /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TABLET PORTRAIT */
-  /*----------------------------------- MOBILE */ }
+  /*----------------------------------- TAB-POR */ }
   @media (max-width: 64em) {
     .section-heading {
       font-size: 3.5rem; } }
@@ -109,10 +122,10 @@ body {
   margin-top: 1rem;
   /* ----------------------------- @MEDIA */
   /*----------------------------------- XL */
+  /*----------------------------------- DESKTOP */
   /*----------------------------------- LAPTOP */
   /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TABLET PORTRAIT */
-  /*----------------------------------- MOBILE */ }
+  /*----------------------------------- TAB-POR */ }
   @media (max-width: 64em) {
     .section-subtitle {
       font-size: 2.5rem; } }
@@ -130,7 +143,16 @@ body {
     display: inline-block;
     border-bottom: 1px solid currentColor;
     transition: all 0.5s;
-    animation: moveInBottom 2s ease; }
+    animation: moveInBottom 2s ease;
+    /* ------------------------------ @MEDIA */
+    /*----------------------------------- XL */
+    /*----------------------------------- DESKTOP */
+    /*----------------------------------- LAPTOP */
+    /*----------------------------------- TABLET LANDSCAPE */
+    /*----------------------------------- TAB-POR */ }
+    @media (max-width: 75em) {
+      .btn-link:link, .btn-link:visited {
+        font-size: 2rem; } }
   .btn-link:hover {
     background-color: #5e0606;
     color: #996700;
@@ -320,14 +342,33 @@ body {
   position: relative;
   display: grid;
   grid-template-rows: auto;
+  /* ----------------- @MEDIA */
+  /*----------------------------------- XL */
+  /*----------------------------------- DESKTOP */
+  /*----------------------------------- LAPTOP */
+  /*----------------------------------- TABLET LANDSCAPE */
+  /*----------------------------------- TAB-POR */
   /* -------------------------------------------- HEADER BOX */
   /* --------------------------------------- LOGO */
   /* --------------------------------------- HEADING */
   /* -------------------------------------------- LINKS */ }
+  @media (max-width: 37.5em) {
+    .header {
+      grid-column: left-start / right-end; } }
   .header__box {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    align-self: flex-end; }
+    align-self: flex-end;
+    /* ----------------- @MEDIA */
+    /*----------------------------------- XL */
+    /*----------------------------------- DESKTOP */
+    /*----------------------------------- LAPTOP */
+    /*----------------------------------- TABLET LANDSCAPE */
+    /*----------------------------------- TAB-POR */ }
+    @media (max-width: 37.5em) {
+      .header__box {
+        align-self: center;
+        padding-right: 1rem; } }
   .header__logo {
     height: 15rem;
     align-self: center;
@@ -342,26 +383,80 @@ body {
       font-size: 6rem;
       font-weight: 400;
       letter-spacing: 2rem;
-      margin-left: 1rem; }
+      margin-left: 1rem;
+      /* ------------------------------ @MEDIA */
+      /*----------------------------------- XL */
+      /*----------------------------------- DESKTOP */
+      /*----------------------------------- LAPTOP */
+      /*----------------------------------- TABLET LANDSCAPE */
+      /*----------------------------------- TAB-POR */
+      /*----------------------------------- XL */
+      /*----------------------------------- DESKTOP */
+      /*----------------------------------- LAPTOP */
+      /*----------------------------------- TABLET LANDSCAPE */
+      /*----------------------------------- TAB-POR */ }
+      @media (max-width: 75em) {
+        .header__heading--main {
+          font-size: 5rem; } }
+      @media (max-width: 26em) {
+        .header__heading--main {
+          font-size: 4rem;
+          letter-spacing: 1rem; } }
     .header__heading--small {
+      font-size: 2rem;
       display: grid;
       grid-template-columns: 1fr max-content 1fr;
       column-gap: 1.5rem;
       align-items: center;
-      font-size: 2rem; }
+      /* --------------- @MEDIA */
+      /*----------------------------------- XL */
+      /*----------------------------------- DESKTOP */
+      /*----------------------------------- LAPTOP */
+      /*----------------------------------- TABLET LANDSCAPE */
+      /*----------------------------------- TAB-POR */ }
       .header__heading--small::before, .header__heading--small::after {
         content: "";
         height: 1px;
         display: block;
         background-color: currentColor; }
+      @media (max-width: 75em) {
+        .header__heading--small {
+          font-size: 1rem; } }
     .header__heading--sub {
       font-size: 4rem;
       font-weight: 700;
-      letter-spacing: 1rem; }
+      letter-spacing: 1rem;
+      /* ----------------- @MEDIA */
+      /*----------------------------------- XL */
+      /*----------------------------------- DESKTOP */
+      /*----------------------------------- LAPTOP */
+      /*----------------------------------- TABLET LANDSCAPE */
+      /*----------------------------------- TAB-POR */
+      /*----------------------------------- XL */
+      /*----------------------------------- DESKTOP */
+      /*----------------------------------- LAPTOP */
+      /*----------------------------------- TABLET LANDSCAPE */
+      /*----------------------------------- TAB-POR */ }
+      @media (max-width: 75em) {
+        .header__heading--sub {
+          font-size: 3rem; } }
+      @media (max-width: 26em) {
+        .header__heading--sub {
+          font-size: 3rem;
+          letter-spacing: normal; } }
   .header__links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-self: center; }
+    align-self: center;
+    /* ----------------- @MEDIA */
+    /*----------------------------------- XL */
+    /*----------------------------------- DESKTOP */
+    /*----------------------------------- LAPTOP */
+    /*----------------------------------- TABLET LANDSCAPE */
+    /*----------------------------------- TAB-POR */ }
+    @media (max-width: 37.5em) {
+      .header__links {
+        display: none; } }
 
 .menus {
   /* -------------------------------------------- CONTENT */
@@ -371,10 +466,10 @@ body {
     grid-column: full-start / col-end 5;
     padding: 6rem 8vw;
     /*----------------------------------- XL */
+    /*----------------------------------- DESKTOP */
     /*----------------------------------- LAPTOP */
     /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TABLET PORTRAIT */
-    /*----------------------------------- MOBILE */
+    /*----------------------------------- TAB-POR */
     /* ------------------------------------- TEXT */ }
     @media (max-width: 37.5em) {
       .menus__content {
@@ -389,15 +484,15 @@ body {
     /* ------------------------------------- LINK */
     /* --------------------------- @MEDIA */
     /*----------------------------------- XL */
+    /*----------------------------------- DESKTOP */
     /*----------------------------------- LAPTOP */
     /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TABLET PORTRAIT */
-    /*----------------------------------- MOBILE */
+    /*----------------------------------- TAB-POR */
     /*----------------------------------- XL */
+    /*----------------------------------- DESKTOP */
     /*----------------------------------- LAPTOP */
     /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TABLET PORTRAIT */
-    /*----------------------------------- MOBILE */ }
+    /*----------------------------------- TAB-POR */ }
     .menus__links--link {
       font-size: 2.5rem;
       font-weight: 600;
@@ -408,15 +503,15 @@ body {
       /* ------------------------- AFTER */
       /* ------------------------- @MEDIA */
       /*----------------------------------- XL */
+      /*----------------------------------- DESKTOP */
       /*----------------------------------- LAPTOP */
       /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TABLET PORTRAIT */
-      /*----------------------------------- MOBILE */
+      /*----------------------------------- TAB-POR */
       /*----------------------------------- XL */
+      /*----------------------------------- DESKTOP */
       /*----------------------------------- LAPTOP */
       /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TABLET PORTRAIT */
-      /*----------------------------------- MOBILE */ }
+      /*----------------------------------- TAB-POR */ }
       .menus__links--link:link, .menus__links--link:visited {
         text-decoration: none;
         color: currentColor; }
@@ -457,10 +552,10 @@ body {
     padding-top: 1.5rem;
     /* ----------------------------- @MEDIA */
     /*----------------------------------- XL */
+    /*----------------------------------- DESKTOP */
     /*----------------------------------- LAPTOP */
     /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TABLET PORTRAIT */
-    /*----------------------------------- MOBILE */ }
+    /*----------------------------------- TAB-POR */ }
     @media (max-width: 37.5em) {
       .menus__picture {
         display: none; } }
@@ -469,10 +564,10 @@ body {
     min-height: 100%;
     /* ----------------------------- @MEDIA */
     /*----------------------------------- XL */
+    /*----------------------------------- DESKTOP */
     /*----------------------------------- LAPTOP */
     /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TABLET PORTRAIT */
-    /*----------------------------------- MOBILE */ }
+    /*----------------------------------- TAB-POR */ }
     @media (max-width: 75em) {
       .menus__img {
         object-fit: cover; } }
