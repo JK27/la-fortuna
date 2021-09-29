@@ -36,7 +36,7 @@ body {
 			$color-background-light,
 			$color-background-light
 		),
-		url(../img/arab_tile/arab_tile_@2X.png);
+		url(../../img/arab_tile/arab_tile_@2X.png);
 
 	/* ----------------- @MEDIA */
 	@include respond(tab-por) {
