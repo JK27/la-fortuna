@@ -32,7 +32,8 @@
 	},
 	"dependencies": {
 		"postcss": "^8.3.6",
-		"sass": "^1.38.1"
+		"sass": "^1.38.1",
+		"ssh2": "^1.4.0"
 	},
 	"engines": {
 		"node": "14.x"
