@@ -344,7 +344,6 @@ body {
   background-color: #5e0606;
   color: #e69b00;
   grid-column: left-start / right-end;
-  min-height: 60vh;
   padding: 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

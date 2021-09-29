@@ -3,7 +3,6 @@
 	background-color: $color-primary;
 	color: $color-secondary-light;
 	grid-column: left-start / right-end;
-	min-height: 60vh;
 	padding: 5rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
