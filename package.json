@@ -22,7 +22,7 @@
 	"bugs": {
 		"url": "https://github.com/JK27/la-fortuna/issues"
 	},
-	"homepage": "https://github.com/JK27/la-fortuna#readme",
+	"homepage": "https://jk27.github.io/la-fortuna/",
 	"devDependencies": {
 		"autoprefixer": "^10.3.2",
 		"concat": "^1.0.3",
