@@ -135,6 +135,10 @@
 		@include respond(tab-lan) {
 			height: 40%;
 		}
+
+		@include respond(mobile) {
+			height: 20%;
+		}
 	}
 
 	////////////////////////////////////////// CONTACT
