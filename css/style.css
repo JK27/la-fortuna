@@ -9,7 +9,7 @@
 37.5em		->		417 - 600px		->		Tablet portrait
 26em			->		321 - 416px		->		Mobile
 20em			->		0 - 320px			->		XS
- 
+
 $breakpoint arg choices:
 - fourk
 - xl
@@ -36,907 +36,1096 @@ ORDER:
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
 
 /* -------------------------------------------------------- HTML */
 html {
-  box-sizing: border-box;
-  /* Making the root font size 10px makes it much easier to convert all the rest of measure units into rem. Default font size is 16px (100%), so 10px is 62.5% */
-  font-size: 62.5%;
-  /* ---------------------------------- @MEDIA */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */ }
-  @media (min-width: 112.5em) and (max-width: 131.24em) {
-    html {
-      font-size: 75%; } }
-  @media (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media (max-width: 64em) {
-    html {
-      font-size: 50%; } }
+	box-sizing: border-box;
+	/* Making the root font size 10px makes it much easier to convert all the rest of measure units into rem. Default font size is 16px (100%), so 10px is 62.5% */
+	font-size: 62.5%;
+	/* ---------------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	html {
+		font-size: 75%;
+	}
+}
+@media (max-width: 75em) {
+	html {
+		font-size: 56.25%;
+	}
+}
+@media (max-width: 64em) {
+	html {
+		font-size: 50%;
+	}
+}
 
 /* -------------------------------------------------------- BODY */
 body {
-  padding-top: 3rem;
-  background-image: linear-gradient(#e69b004d, #e69b004d), url(../../img/arab_tile/arab_tile_2X.png);
-  /* ----------------- @MEDIA */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */ }
-  @media (max-width: 37.5em) {
-    body {
-      padding-top: 0; } }
+	padding-top: 3rem;
+	background-image: linear-gradient(#e69b004d, #e69b004d),
+		url(../../img/arab_tile/arab_tile_2X.png);
+	/* ----------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (max-width: 37.5em) {
+	body {
+		padding-top: 0;
+	}
+}
 
 /* -------------------------------------------------------- CONTAINER */
 .container {
-  display: grid;
-  grid-template-rows: 90vh repeat(5, min-content);
-  grid-template-columns: [left-start] 3rem [left-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end right-start] 3rem [right-end]; }
+	display: grid;
+	grid-template-rows: 90vh repeat(5, min-content);
+	grid-template-columns: [left-start] 3rem [left-end full-start] minmax(
+			6rem,
+			1fr
+		) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(
+			6rem,
+			1fr
+		) [full-end right-start] 3rem [right-end];
+}
 
 /* -------------------------------------------------------- BODY */
 body {
-  font-family: "Roboto Slab", serif;
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 1.6;
-  color: #5e0606; }
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: #5e0606;
+}
 
 /* -------------------------------------------------------- HEADINGS */
 .section-heading {
-  font-weight: 700; }
+	font-weight: 700;
+}
 
 .section-heading {
-  font-size: 4rem;
-  font-style: italic;
-  text-align: center;
-  text-decoration: underline;
-  /* ----------------------------- @MEDIA */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */ }
-  @media (min-width: 131.25em) {
-    .section-heading {
-      font-size: 7rem; } }
-  @media (min-width: 112.5em) and (max-width: 131.24em) {
-    .section-heading {
-      font-size: 6rem; } }
-  @media (max-width: 64em) {
-    .section-heading {
-      font-size: 3.5rem; } }
+	font-size: 4rem;
+	font-style: italic;
+	text-align: center;
+	text-decoration: underline;
+	/* ----------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 131.25em) {
+	.section-heading {
+		font-size: 7rem;
+	}
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.section-heading {
+		font-size: 6rem;
+	}
+}
+@media (max-width: 64em) {
+	.section-heading {
+		font-size: 3.5rem;
+	}
+}
 
 .section-subtitle {
-  font-size: 3rem;
-  font-style: italic;
-  text-align: center;
-  margin-top: 1rem;
-  /* ----------------------------- @MEDIA */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */ }
-  @media (min-width: 131.25em) {
-    .section-subtitle {
-      font-size: 5rem; } }
-  @media (min-width: 112.5em) and (max-width: 131.24em) {
-    .section-subtitle {
-      font-size: 4rem; } }
-  @media (max-width: 64em) {
-    .section-subtitle {
-      font-size: 2.5rem; } }
+	font-size: 3rem;
+	font-style: italic;
+	text-align: center;
+	margin-top: 1rem;
+	/* ----------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 131.25em) {
+	.section-subtitle {
+		font-size: 5rem;
+	}
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.section-subtitle {
+		font-size: 4rem;
+	}
+}
+@media (max-width: 64em) {
+	.section-subtitle {
+		font-size: 2.5rem;
+	}
+}
 
 /* -------------------------------------------------------- BTN LINK */
 .btn-link {
-  backface-visibility: hidden; }
-  .btn-link:link, .btn-link:visited {
-    font-family: "Roboto Slab", serif;
-    font-size: 3rem;
-    font-weight: 900;
-    color: currentColor;
-    margin: 4rem;
-    text-decoration: none;
-    display: inline-block;
-    border-bottom: 1px solid currentColor;
-    transition: all 0.5s;
-    animation: moveInBottom 2s ease;
-    /* ------------------------------ @MEDIA */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */ }
-    @media (min-width: 112.5em) and (max-width: 131.24em) {
-      .btn-link:link, .btn-link:visited {
-        font-size: 4rem; } }
-    @media (max-width: 75em) {
-      .btn-link:link, .btn-link:visited {
-        font-size: 2rem; } }
-  .btn-link:hover {
-    background-color: #5e0606;
-    color: #996700;
-    box-shadow: 0 1rem 2rem rgba(94, 6, 6, 0.5);
-    transform: translateY(-0.8rem); }
-  .btn-link:active {
-    box-shadow: 0 0.5rem 1rem rgba(94, 6, 6, 0.5);
-    transform: translateY(0); }
+	backface-visibility: hidden;
+}
+.btn-link:link,
+.btn-link:visited {
+	font-family: "Roboto Slab", serif;
+	font-size: 3rem;
+	font-weight: 900;
+	color: currentColor;
+	margin: 4rem;
+	text-decoration: none;
+	display: inline-block;
+	border-bottom: 1px solid currentColor;
+	transition: all 0.5s;
+	animation: moveInBottom 2s ease;
+	/* ------------------------------ @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.btn-link:link,
+	.btn-link:visited {
+		font-size: 4rem;
+	}
+}
+@media (max-width: 75em) {
+	.btn-link:link,
+	.btn-link:visited {
+		font-size: 2rem;
+	}
+}
+.btn-link:hover {
+	background-color: #5e0606;
+	color: #996700;
+	box-shadow: 0 1rem 2rem rgba(94, 6, 6, 0.5);
+	transform: translateY(-0.8rem);
+}
+.btn-link:active {
+	box-shadow: 0 0.5rem 1rem rgba(94, 6, 6, 0.5);
+	transform: translateY(0);
+}
 
 /* -------------------------------------------------------- MENUS LINK */
 /* -------------------------------------------------------- KEYFRAMES */
 @keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(100px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
 .footer__icon {
-  height: 1.6rem;
-  width: 1.6rem;
-  fill: currentColor;
-  margin-right: 2rem; }
+	height: 1.6rem;
+	width: 1.6rem;
+	fill: currentColor;
+	margin-right: 2rem;
+}
 
 .features {
-  grid-row: 4 / 5;
-  grid-column: center-start / center-end;
-  padding: 10rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 6rem;
-  align-items: flex-start;
-  /* ----------------------------- @MEDIA */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */ }
-  @media (min-width: 131.25em) {
-    .features {
-      grid-column: full-start / full-end;
-      font-size: 3rem;
-      margin: 0 5rem; } }
-  @media (min-width: 112.5em) and (max-width: 131.24em) {
-    .features {
-      font-size: 2rem; } }
-  @media (max-width: 64em) {
-    .features {
-      padding: 8rem 0; } }
-  @media (max-width: 37.5em) {
-    .features {
-      padding: 6rem 0; } }
-  @media (max-width: 20em) {
-    .features {
-      grid-column: full-start / full-end; } }
+	grid-row: 4 / 5;
+	grid-column: center-start / center-end;
+	padding: 10rem 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 6rem;
+	align-items: flex-start;
+	/* ----------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 131.25em) {
+	.features {
+		grid-column: full-start / full-end;
+		font-size: 3rem;
+		margin: 0 5rem;
+	}
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.features {
+		font-size: 2rem;
+	}
+}
+@media (max-width: 64em) {
+	.features {
+		padding: 8rem 0;
+	}
+}
+@media (max-width: 37.5em) {
+	.features {
+		padding: 6rem 0;
+	}
+}
+@media (max-width: 20em) {
+	.features {
+		grid-column: full-start / full-end;
+	}
+}
 
 .feature {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  row-gap: 1.5rem;
-  column-gap: 1.5rem; }
-  .feature__icon {
-    fill: #5e0606;
-    width: 5rem;
-    height: 5rem;
-    grid-row: 1 / span 2; }
-  .feature__heading {
-    text-decoration: underline; }
-  .feature__text {
-    font-weight: 400; }
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	row-gap: 1.5rem;
+	column-gap: 1.5rem;
+}
+.feature__icon {
+	fill: #5e0606;
+	width: 5rem;
+	height: 5rem;
+	grid-row: 1 / span 2;
+}
+.feature__heading {
+	text-decoration: underline;
+}
+.feature__text {
+	font-weight: 400;
+}
 
 .footer {
-  font-size: 1.6rem;
-  background-color: #5e0606;
-  color: #e69b00;
-  grid-column: left-start / right-end;
-  min-height: 60vh;
-  padding: 5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-  /* ----------------------------- @MEDIA */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */ }
-  @media (min-width: 131.25em) {
-    .footer {
-      padding: 2rem 0;
-      font-size: 3rem; } }
-  @media (min-width: 112.5em) and (max-width: 131.24em) {
-    .footer {
-      padding: 2rem 0;
-      font-size: 2rem; } }
-  @media (max-width: 37.5em) {
-    .footer {
-      padding: 4rem; } }
-  @media (max-width: 26em) {
-    .footer {
-      font-size: 1.3rem;
-      padding: 2rem; } }
-  @media (max-width: 20em) {
-    .footer {
-      column-gap: 1rem;
-      padding: 1rem; } }
-  .footer h3::after {
-    content: "";
-    height: 1px;
-    width: 50%;
-    margin-left: 25%;
-    display: block;
-    background-color: currentColor; }
-  .footer__text:nth-last-of-type(2) {
-    /* Adds margin-top to only the first of type p.footer__location__address */
-    margin-top: 2rem; }
-  .footer__social ul {
-    list-style-type: none; }
-  .footer__social--item {
-    margin-top: 2rem;
-    position: relative; }
-    .footer__social--item::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 40%;
-      margin-left: 30%;
-      height: 1px;
-      background-color: #e69b00;
-      transition: opacity 300ms, transform 300ms;
-      opacity: 1;
-      transform: scale(0);
-      transform-origin: center; }
-    .footer__social--item:focus::after, .footer__social--item:hover::after {
-      transform: scale(1); }
-  .footer__social--link {
-    position: relative;
-    display: grid;
-    grid-template-columns: 6fr 7fr;
-    align-items: stretch;
-    /* Aligning and justifying the items make them look centered withing the grid column */ }
-    .footer__social--link:link, .footer__social--link:visited {
-      text-decoration: none;
-      color: currentColor; }
-    .footer__social--link svg {
-      align-self: center;
-      justify-self: right;
-      margin-right: 2rem; }
-    .footer__social--link span {
-      align-self: center;
-      justify-self: left; }
-  .footer .copyright {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    /* ----------------------------- @MEDIA */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */ }
-    @media (min-width: 112.5em) and (max-width: 131.24em) {
-      .footer .copyright {
-        font-size: 1.6rem; } }
-    @media (max-width: 37.5em) {
-      .footer .copyright {
-        font-size: 1rem; } }
-  .footer #map {
-    height: 50%;
-    width: 80%;
-    margin-top: 2rem;
-    margin-left: 10%;
-    /* ----------------------------- @MEDIA */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */ }
-    @media (max-width: 48em) {
-      .footer #map {
-        height: 40%; } }
-    @media (max-width: 26em) {
-      .footer #map {
-        height: 20%; } }
-  .footer__contact ul {
-    list-style-type: none; }
-  .footer__contact--item {
-    margin-top: 2rem; }
-    .footer__contact--item:last-of-type {
-      margin-bottom: 2rem; }
+	font-size: 1.6rem;
+	background-color: #5e0606;
+	color: #e69b00;
+	grid-column: left-start / right-end;
+	min-height: 60vh;
+	padding: 5rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	/* ----------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 131.25em) {
+	.footer {
+		padding: 2rem 0;
+		font-size: 3rem;
+	}
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.footer {
+		padding: 2rem 0;
+		font-size: 2rem;
+	}
+}
+@media (max-width: 37.5em) {
+	.footer {
+		padding: 4rem;
+	}
+}
+@media (max-width: 26em) {
+	.footer {
+		font-size: 1.3rem;
+		padding: 2rem;
+	}
+}
+@media (max-width: 20em) {
+	.footer {
+		column-gap: 1rem;
+		padding: 1rem;
+	}
+}
+.footer h3::after {
+	content: "";
+	height: 1px;
+	width: 50%;
+	margin-left: 25%;
+	display: block;
+	background-color: currentColor;
+}
+.footer__text:nth-last-of-type(2) {
+	/* Adds margin-top to only the first of type p.footer__location__address */
+	margin-top: 2rem;
+}
+.footer__social ul {
+	list-style-type: none;
+}
+.footer__social--item {
+	margin-top: 2rem;
+	position: relative;
+}
+.footer__social--item::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 40%;
+	margin-left: 30%;
+	height: 1px;
+	background-color: #e69b00;
+	transition: opacity 300ms, transform 300ms;
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+.footer__social--item:focus::after,
+.footer__social--item:hover::after {
+	transform: scale(1);
+}
+.footer__social--link {
+	position: relative;
+	display: grid;
+	grid-template-columns: 6fr 7fr;
+	align-items: stretch;
+	/* Aligning and justifying the items make them look centered withing the grid column */
+}
+.footer__social--link:link,
+.footer__social--link:visited {
+	text-decoration: none;
+	color: currentColor;
+}
+.footer__social--link svg {
+	align-self: center;
+	justify-self: right;
+	margin-right: 2rem;
+}
+.footer__social--link span {
+	align-self: center;
+	justify-self: left;
+}
+.footer .copyright {
+	font-size: 1.2rem;
+	margin-top: 1.5rem;
+	/* ----------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.footer .copyright {
+		font-size: 1.6rem;
+	}
+}
+@media (max-width: 37.5em) {
+	.footer .copyright {
+		font-size: 1rem;
+	}
+}
+.footer #map {
+	height: 50%;
+	width: 80%;
+	margin-top: 2rem;
+	margin-left: 10%;
+	/* ----------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (max-width: 48em) {
+	.footer #map {
+		height: 40%;
+	}
+}
+@media (max-width: 26em) {
+	.footer #map {
+		height: 20%;
+	}
+}
+.footer__contact ul {
+	list-style-type: none;
+}
+.footer__contact--item {
+	margin-top: 2rem;
+}
+.footer__contact--item:last-of-type {
+	margin-bottom: 2rem;
+}
 
 .gallery {
-  grid-row: 3 / 4;
-  grid-column: left-start / right-end;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, 5vw);
-  gap: 1.5rem;
-  padding: 1.5rem; }
-  .gallery__pic--1 {
-    grid-row: 1 / span 4;
-    grid-column: 1 / span 2; }
-  .gallery__pic--2 {
-    grid-row: 1 / span 2;
-    grid-column: 3 / span 2; }
-  .gallery__pic--3 {
-    grid-row: 1 / 2;
-    grid-column: 5 / span 2; }
-  .gallery__pic--4 {
-    grid-row: 1 / span 2;
-    grid-column: 7 / span 2; }
-  .gallery__pic--5 {
-    grid-row: 3 / span 2;
-    grid-column: 3 / 4; }
-  .gallery__pic--6 {
-    grid-row: 3 / span 3;
-    grid-column: 4 / 5; }
-  .gallery__pic--7 {
-    grid-row: 2 / span 3;
-    grid-column: 5 / span 2; }
-  .gallery__pic--8 {
-    grid-row: 3 / span 2;
-    grid-column: 7 / 8; }
-  .gallery__pic--9 {
-    grid-row: 3 / span 3;
-    grid-column: 8 / 9; }
-  .gallery__pic--10 {
-    grid-row: 5 / span 3;
-    grid-column: 1 / 2; }
-  .gallery__pic--11 {
-    grid-row: 5 / span 3;
-    grid-column: 2 / span 2; }
-  .gallery__pic--12 {
-    grid-row: 6 / span 2;
-    grid-column: 4 / 5; }
-  .gallery__pic--13 {
-    grid-row: 5 / span 3;
-    grid-column: 5 / span 3; }
-  .gallery__pic--14 {
-    grid-row: 6 / span 2;
-    grid-column: 8 / 9; }
-  .gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block; }
+	grid-row: 3 / 4;
+	grid-column: left-start / right-end;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(7, 5vw);
+	gap: 1.5rem;
+	padding: 1.5rem;
+}
+.gallery__pic--1 {
+	grid-row: 1 / span 4;
+	grid-column: 1 / span 2;
+}
+.gallery__pic--2 {
+	grid-row: 1 / span 2;
+	grid-column: 3 / span 2;
+}
+.gallery__pic--3 {
+	grid-row: 1 / 2;
+	grid-column: 5 / span 2;
+}
+.gallery__pic--4 {
+	grid-row: 1 / span 2;
+	grid-column: 7 / span 2;
+}
+.gallery__pic--5 {
+	grid-row: 3 / span 2;
+	grid-column: 3 / 4;
+}
+.gallery__pic--6 {
+	grid-row: 3 / span 3;
+	grid-column: 4 / 5;
+}
+.gallery__pic--7 {
+	grid-row: 2 / span 3;
+	grid-column: 5 / span 2;
+}
+.gallery__pic--8 {
+	grid-row: 3 / span 2;
+	grid-column: 7 / 8;
+}
+.gallery__pic--9 {
+	grid-row: 3 / span 3;
+	grid-column: 8 / 9;
+}
+.gallery__pic--10 {
+	grid-row: 5 / span 3;
+	grid-column: 1 / 2;
+}
+.gallery__pic--11 {
+	grid-row: 5 / span 3;
+	grid-column: 2 / span 2;
+}
+.gallery__pic--12 {
+	grid-row: 6 / span 2;
+	grid-column: 4 / 5;
+}
+.gallery__pic--13 {
+	grid-row: 5 / span 3;
+	grid-column: 5 / span 3;
+}
+.gallery__pic--14 {
+	grid-row: 6 / span 2;
+	grid-column: 8 / 9;
+}
+.gallery__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
 
 /* -------------------------------------------------------- HEADER */
 .header {
-  grid-column: full-start / full-end;
-  grid-row: 1 / 2;
-  font-family: "Sancreek", cursive;
-  color: #5e0606;
-  text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(153, 103, 0, 0.8), rgba(230, 155, 0, 0.8)), url(../img/paella.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: grid;
-  grid-template-rows: auto;
-  /* ----------------- @MEDIA */
-  /*----------------------------------- 4K */
-  /*----------------------------------- XL */
-  /*----------------------------------- DESKTOP */
-  /*----------------------------------- LAPTOP */
-  /*----------------------------------- TABLET LANDSCAPE */
-  /*----------------------------------- TAB-POR */
-  /*----------------------------------- MOBILE */
-  /*----------------------------------- XS */
-  /* -------------------------------------------- HEADER BOX */
-  /* --------------------------------------- LOGO */
-  /* --------------------------------------- HEADING */
-  /* -------------------------------------------- LINKS */ }
-  @media (max-width: 37.5em) {
-    .header {
-      grid-column: left-start / right-end; } }
-  .header__box {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    align-self: flex-end;
-    /* ----------------- @MEDIA */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */ }
-    @media (max-width: 37.5em) {
-      .header__box {
-        align-self: center;
-        padding-right: 1rem; } }
-  .header__logo {
-    height: 15rem;
-    align-self: center;
-    justify-self: right;
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */ }
-    @media (min-width: 112.5em) and (max-width: 131.24em) {
-      .header__logo {
-        height: 25rem; } }
-  .header__heading {
-    text-transform: uppercase;
-    justify-self: left;
-    /* --------------------------- MAIN */
-    /* --------------------------- SMALL */
-    /* --------------------------- SUB */ }
-    .header__heading--main {
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 2rem;
-      margin-left: 1rem;
-      /* ------------------------------ @MEDIA */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */ }
-      @media (min-width: 112.5em) and (max-width: 131.24em) {
-        .header__heading--main {
-          font-size: 9rem; } }
-      @media (max-width: 75em) {
-        .header__heading--main {
-          font-size: 5rem; } }
-      @media (max-width: 26em) {
-        .header__heading--main {
-          font-size: 4rem;
-          letter-spacing: 1rem; } }
-    .header__heading--small {
-      font-size: 2rem;
-      display: grid;
-      grid-template-columns: 1fr max-content 1fr;
-      column-gap: 1.5rem;
-      align-items: center;
-      /* --------------- @MEDIA */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */ }
-      .header__heading--small::before, .header__heading--small::after {
-        content: "";
-        height: 1px;
-        display: block;
-        background-color: currentColor; }
-      @media (min-width: 112.5em) and (max-width: 131.24em) {
-        .header__heading--small {
-          font-size: 3rem; } }
-      @media (max-width: 75em) {
-        .header__heading--small {
-          font-size: 1rem; } }
-    .header__heading--sub {
-      font-size: 4rem;
-      font-weight: 700;
-      letter-spacing: 1rem;
-      /* ----------------- @MEDIA */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */ }
-      @media (min-width: 112.5em) and (max-width: 131.24em) {
-        .header__heading--sub {
-          font-size: 6rem; } }
-      @media (max-width: 75em) {
-        .header__heading--sub {
-          font-size: 3rem; } }
-      @media (max-width: 26em) {
-        .header__heading--sub {
-          font-size: 3rem;
-          letter-spacing: normal; } }
-  .header__links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-self: center;
-    /* ----------------- @MEDIA */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */ }
-    @media (max-width: 37.5em) {
-      .header__links {
-        display: none; } }
+	grid-column: full-start / full-end;
+	grid-row: 1 / 2;
+	font-family: "Sancreek", cursive;
+	color: #5e0606;
+	text-align: center;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba(153, 103, 0, 0.8),
+			rgba(230, 155, 0, 0.8)
+		),
+		url(../img/paella.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: grid;
+	grid-template-rows: auto;
+	/* ----------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/* -------------------------------------------- HEADER BOX */
+	/* --------------------------------------- LOGO */
+	/* --------------------------------------- HEADING */
+	/* -------------------------------------------- LINKS */
+}
+@media (max-width: 37.5em) {
+	.header {
+		grid-column: left-start / right-end;
+	}
+}
+.header__box {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	align-self: flex-end;
+	/* ----------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (max-width: 37.5em) {
+	.header__box {
+		align-self: center;
+		padding-right: 1rem;
+	}
+}
+.header__logo {
+	height: 15rem;
+	align-self: center;
+	justify-self: right;
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.header__logo {
+		height: 25rem;
+	}
+}
+.header__heading {
+	text-transform: uppercase;
+	justify-self: left;
+	/* --------------------------- MAIN */
+	/* --------------------------- SMALL */
+	/* --------------------------- SUB */
+}
+.header__heading--main {
+	font-size: 6rem;
+	font-weight: 400;
+	letter-spacing: 2rem;
+	margin-left: 1rem;
+	/* ------------------------------ @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.header__heading--main {
+		font-size: 9rem;
+	}
+}
+@media (max-width: 75em) {
+	.header__heading--main {
+		font-size: 5rem;
+	}
+}
+@media (max-width: 26em) {
+	.header__heading--main {
+		font-size: 4rem;
+		letter-spacing: 1rem;
+	}
+}
+.header__heading--small {
+	font-size: 2rem;
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	column-gap: 1.5rem;
+	align-items: center;
+	/* --------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+.header__heading--small::before,
+.header__heading--small::after {
+	content: "";
+	height: 1px;
+	display: block;
+	background-color: currentColor;
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.header__heading--small {
+		font-size: 3rem;
+	}
+}
+@media (max-width: 75em) {
+	.header__heading--small {
+		font-size: 1rem;
+	}
+}
+.header__heading--sub {
+	font-size: 4rem;
+	font-weight: 700;
+	letter-spacing: 1rem;
+	/* ----------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.header__heading--sub {
+		font-size: 6rem;
+	}
+}
+@media (max-width: 75em) {
+	.header__heading--sub {
+		font-size: 3rem;
+	}
+}
+@media (max-width: 26em) {
+	.header__heading--sub {
+		font-size: 3rem;
+		letter-spacing: normal;
+	}
+}
+.header__links {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-self: center;
+	/* ----------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (max-width: 37.5em) {
+	.header__links {
+		display: none;
+	}
+}
 
 .menus {
-  /* -------------------------------------------- CONTENT */
-  /* -------------------------------------------- LINKS */
-  /* -------------------------------------------- IMAGE */ }
-  .menus__content {
-    grid-column: full-start / col-end 5;
-    padding: 6rem 8vw;
-    /* ----------------- @MEDIA */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */
-    /* ------------------------------------- TEXT */ }
-    @media (min-width: 131.25em) {
-      .menus__content {
-        padding: 8rem 8vw; } }
-    @media (max-width: 37.5em) {
-      .menus__content {
-        grid-column: full-start / full-end; } }
-    .menus__content--text {
-      font-weight: 500;
-      margin-top: 2rem;
-      /* --------------- @MEDIA */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */ }
-      @media (min-width: 131.25em) {
-        .menus__content--text {
-          margin-top: 4rem;
-          font-size: 3rem; } }
-      @media (min-width: 112.5em) and (max-width: 131.24em) {
-        .menus__content--text {
-          font-size: 2.2rem; } }
-  .menus__links {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    /* ------------------------------------- LINK */
-    /* --------------------------- @MEDIA */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */ }
-    .menus__links--link {
-      font-size: 2.5rem;
-      font-weight: 600;
-      color: currentColor;
-      text-decoration: none;
-      margin-top: 5.5rem;
-      position: relative;
-      /* ------------------------- @MEDIA */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */
-      /*----------------------------------- 4K */
-      /*----------------------------------- XL */
-      /*----------------------------------- DESKTOP */
-      /*----------------------------------- LAPTOP */
-      /*----------------------------------- TABLET LANDSCAPE */
-      /*----------------------------------- TAB-POR */
-      /*----------------------------------- MOBILE */
-      /*----------------------------------- XS */
-      /* ------------------------- AFTER */ }
-      @media (min-width: 131.25em) {
-        .menus__links--link {
-          font-size: 4.5rem;
-          margin-top: 9rem; } }
-      @media (min-width: 112.5em) and (max-width: 131.24em) {
-        .menus__links--link {
-          font-size: 3.5rem;
-          margin-top: 5rem; } }
-      .menus__links--link:link, .menus__links--link:visited {
-        text-decoration: none;
-        color: currentColor; }
-      .menus__links--link::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 90%;
-        margin-left: 5%;
-        height: 2px;
-        background-color: currentColor;
-        transition: opacity 300ms, transform 300ms;
-        opacity: 1;
-        transform: scale(0);
-        transform-origin: center; }
-      .menus__links--link:focus::after, .menus__links--link:hover::after {
-        transform: scale(1); }
-      .menus__links--link:visited::after {
-        transform: scale(0); }
-    @media (max-width: 48em) {
-      .menus__links {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr); } }
-    @media (max-width: 48em) {
-      .menus__links {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr; } }
-  .menus__picture {
-    grid-column: col-start 6 / full-end;
-    padding-top: 1.5rem;
-    /* ----------------------------- @MEDIA */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */ }
-    @media (max-width: 37.5em) {
-      .menus__picture {
-        display: none; } }
-  .menus__img {
-    max-width: 100%;
-    min-height: 100%;
-    /* ----------------------------- @MEDIA */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- DESKTOP */
-    /*----------------------------------- LAPTOP */
-    /*----------------------------------- TABLET LANDSCAPE */
-    /*----------------------------------- TAB-POR */
-    /*----------------------------------- MOBILE */
-    /*----------------------------------- XS */ }
-    @media (max-width: 75em) {
-      .menus__img {
-        object-fit: cover; } }
+	/* -------------------------------------------- CONTENT */
+	/* -------------------------------------------- LINKS */
+	/* -------------------------------------------- IMAGE */
+}
+.menus__content {
+	grid-column: full-start / col-end 5;
+	padding: 6rem 8vw;
+	/* ----------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/* ------------------------------------- TEXT */
+}
+@media (min-width: 131.25em) {
+	.menus__content {
+		padding: 8rem 8vw;
+	}
+}
+@media (max-width: 37.5em) {
+	.menus__content {
+		grid-column: full-start / full-end;
+	}
+}
+.menus__content--text {
+	font-weight: 500;
+	margin-top: 2rem;
+	/* --------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (min-width: 131.25em) {
+	.menus__content--text {
+		margin-top: 4rem;
+		font-size: 3rem;
+	}
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.menus__content--text {
+		font-size: 2.2rem;
+	}
+}
+.menus__links {
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	/* ------------------------------------- LINK */
+	/* --------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+.menus__links--link {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: currentColor;
+	text-decoration: none;
+	margin-top: 5.5rem;
+	position: relative;
+	/* ------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+	/* ------------------------- AFTER */
+}
+@media (min-width: 131.25em) {
+	.menus__links--link {
+		font-size: 4.5rem;
+		margin-top: 9rem;
+	}
+}
+@media (min-width: 112.5em) and (max-width: 131.24em) {
+	.menus__links--link {
+		font-size: 3.5rem;
+		margin-top: 5rem;
+	}
+}
+.menus__links--link:link,
+.menus__links--link:visited {
+	text-decoration: none;
+	color: currentColor;
+}
+.menus__links--link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 90%;
+	margin-left: 5%;
+	height: 2px;
+	background-color: currentColor;
+	transition: opacity 300ms, transform 300ms;
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+.menus__links--link:focus::after,
+.menus__links--link:hover::after {
+	transform: scale(1);
+}
+.menus__links--link:visited::after {
+	transform: scale(0);
+}
+@media (max-width: 48em) {
+	.menus__links {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr);
+	}
+}
+@media (max-width: 48em) {
+	.menus__links {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+}
+.menus__picture {
+	grid-column: col-start 6 / full-end;
+	padding-top: 1.5rem;
+	/* ----------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (max-width: 37.5em) {
+	.menus__picture {
+		display: none;
+	}
+}
+.menus__img {
+	max-width: 100%;
+	min-height: 100%;
+	/* ----------------------------- @MEDIA */
+	/*----------------------------------- 4K */
+	/*----------------------------------- XL */
+	/*----------------------------------- DESKTOP */
+	/*----------------------------------- LAPTOP */
+	/*----------------------------------- TABLET LANDSCAPE */
+	/*----------------------------------- TAB-POR */
+	/*----------------------------------- MOBILE */
+	/*----------------------------------- XS */
+}
+@media (max-width: 75em) {
+	.menus__img {
+		object-fit: cover;
+	}
+}
