@@ -11,7 +11,7 @@
 	/* ----------------------------- @MEDIA */
 	@include respond(fourk) {
 		padding: 2rem 0;
-		font-size: 3rem;
+		font-size: 3.2rem;
 	}
 
 	@include respond(xl) {
@@ -19,12 +19,14 @@
 		font-size: 2rem;
 	}
 
-	@include respond(tab-por) {
+	@include respond(tablet) {
 		padding: 4rem;
 	}
 
-	@include respond(mobile) {
-		font-size: 1.3rem;
+	@include respond(mob-por) {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(3, 1fr);
+
 		padding: 2rem;
 	}
 
@@ -50,6 +52,11 @@
 
 	////////////////////////////////////////// SOCIAL
 	&__social {
+		/* ----------------------------- @MEDIA */
+		@include respond(mob-por) {
+			grid-row: 3 / 4;
+		}
+
 		ul {
 			list-style-type: none;
 		}
@@ -114,12 +121,26 @@
 		margin-top: 1.5rem;
 
 		/* ----------------------------- @MEDIA */
+		@include respond(fourk) {
+			font-size: 2rem;
+		}
+
 		@include respond(xl) {
 			font-size: 1.6rem;
 		}
 
-		@include respond(tab-por) {
+		@include respond(mob-por) {
 			font-size: 1rem;
+		}
+	}
+
+	////////////////////////////////////////// LOCATION
+	&__location {
+		/* ----------------------------- @MEDIA */
+		@include respond(mob-por) {
+			grid-row: 2 / 3;
+
+			margin-top: $footer-gap-margin;
 		}
 	}
 
@@ -131,17 +152,20 @@
 		margin-left: 10%;
 
 		/* ----------------------------- @MEDIA */
-		@include respond(tab-lan) {
+		@include respond(tablet) {
 			height: 40%;
-		}
-
-		@include respond(mobile) {
-			height: 20%;
 		}
 	}
 
 	////////////////////////////////////////// CONTACT
 	&__contact {
+		/* ----------------------------- @MEDIA */
+		@include respond(mob-por) {
+			grid-row: 1 / 2;
+
+			margin-top: $footer-gap-margin;
+		}
+
 		ul {
 			list-style-type: none;
 		}

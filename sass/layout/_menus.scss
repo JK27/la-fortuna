@@ -10,7 +10,7 @@
 			padding: 8rem 8vw;
 		}
 		// Makes section take full width after removing picture
-		@include respond(tab-por) {
+		@include respond(mob-por) {
 			grid-column: full-start / full-end;
 		}
 
@@ -22,11 +22,19 @@
 			/* --------------- @MEDIA */
 			@include respond(fourk) {
 				margin-top: 4rem;
-				font-size: 3rem;
+				font-size: 3.5rem;
 			}
 
 			@include respond(xl) {
 				font-size: 2.2rem;
+			}
+
+			@include respond(laptop) {
+				font-size: 2rem;
+			}
+
+			@include respond(mob-por) {
+				font-size: 1.6rem;
 			}
 		}
 	}
@@ -55,6 +63,14 @@
 			@include respond(xl) {
 				font-size: 3.5rem;
 				margin-top: 5rem;
+			}
+
+			@include respond(mob-por) {
+				font-size: 1.8rem;
+			}
+
+			@include respond(xs) {
+				font-weight: 800;
 			}
 
 			&:link,
@@ -109,7 +125,7 @@
 
 		/* ----------------------------- @MEDIA */
 		// Removes picture leaving real state for content
-		@include respond(tab-por) {
+		@include respond(mob-por) {
 			display: none;
 		}
 	}
@@ -122,13 +138,5 @@
 		@include respond(desktop) {
 			object-fit: cover;
 		}
-
-		// @include respond(laptop) {
-		// 	object-fit: contain;
-		// }
-
-		// @include respond(tab-lan) {
-		// 	object-fit: cover;
-		// }
 	}
 }

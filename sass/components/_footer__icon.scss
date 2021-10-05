@@ -3,4 +3,15 @@
 	width: 1.6rem;
 	fill: currentColor;
 	margin-right: 2rem;
+
+	/* ----------------------------- @MEDIA */
+	@include respond(fourk) {
+		height: 3rem;
+		width: 3rem;
+	}
+
+	@include respond(mob-por) {
+		height: 1rem;
+		width: 1rem;
+	}
 }

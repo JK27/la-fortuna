@@ -39,7 +39,7 @@ body {
 		url(../../img/arab_tile/arab_tile_2X.png);
 
 	/* ----------------- @MEDIA */
-	@include respond(tab-por) {
+	@include respond(tablet) {
 		padding-top: 0;
 	}
 }
@@ -53,4 +53,13 @@ body {
 		[center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
 		[center-end]
 		minmax(6rem, 1fr) [full-end right-start] 3rem [right-end];
+
+	/* ----------------------------- @MEDIA */
+	@include respond(laptop) {
+		grid-template-rows: 40vh repeat(5, min-content);
+	}
+
+	@include respond(tablet) {
+		grid-template-rows: 30vh repeat(5, min-content);
+	}
 }

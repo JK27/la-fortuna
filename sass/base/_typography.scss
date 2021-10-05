@@ -22,15 +22,19 @@ body {
 
 	/* ----------------------------- @MEDIA */
 	@include respond(fourk) {
-		font-size: 7rem;
+		font-size: 8rem;
 	}
 
 	@include respond(xl) {
 		font-size: 6rem;
 	}
 
-	@include respond(laptop) {
+	@include respond(mob-por) {
 		font-size: 3.5rem;
+	}
+
+	@include respond(xs) {
+		font-size: 3rem;
 	}
 }
 
@@ -42,14 +46,18 @@ body {
 
 	/* ----------------------------- @MEDIA */
 	@include respond(fourk) {
-		font-size: 5rem;
+		font-size: 6rem;
 	}
 
 	@include respond(xl) {
 		font-size: 4rem;
 	}
 
-	@include respond(laptop) {
+	@include respond(mob-por) {
 		font-size: 2.5rem;
+	}
+
+	@include respond(xs) {
+		font-size: 2rem;
 	}
 }

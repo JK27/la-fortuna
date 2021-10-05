@@ -76,13 +76,16 @@
 				all the regions through their specialities. From the heart-warming stews
 				of the north, to the seafood of the Mediterranean coast, roasts from the
 				central regions and even the more exotic flavours of the Canary Islands.
-				<br />
+			</p>
+			<p class="menus__content--text">
 				Taste well-known dishes as paella, gazpacho or our selection of cold
 				meats and cheeses to tantallise your tastebuds.
-				<br />
+			</p>
+			<p class="menus__content--text">
 				Or broaden your horizons to less famous but equally delicious recipes to
 				discover a new favourite tapa.
-				<br />
+			</p>
+			<p class="menus__content--text">
 				All of them well accompanied by our extense selection of wines, beers
 				and cocktails to round up a great culinary experience. Olé!
 			</p>
@@ -328,6 +331,53 @@
 		</section>
 		<!---------------------------------------------------------- FOOTER -->
 		<footer class="footer" id="section-footer">
+			<!---------------------------------------------- CONTACT -->
+			<div class="footer__contact">
+				<ul>
+					<h3>Contact</h3>
+					<!----------------------------- PHONE -->
+					<li class="footer__contact--item">
+						<p>0131 555 555</p>
+					</li>
+					<!----------------------------- EMAIL -->
+					<li class="footer__contact--item">
+						<p>hola@lafortuna.com</p>
+					</li>
+					<h3>Opening Hours</h3>
+					<p class="footer__text">Mon - Thu: 12:00 - 22:00</p>
+					<p class="footer__text">Fri - Sun: 11:00 - 23:00</p>
+				</ul>
+			</div>
+
+			<!---------------------------------------------- LOCATION -->
+			<div class="footer__location">
+				<h3>Location</h3>
+				<p class="footer__text">Fort Kinnaird Retail Park, Newcraighall Rd,</p>
+				<p class="footer__text">Edinburgh EH15 3HP</p>
+
+				<!----------------------------- MAP -->
+				<div id="map"></div>
+				<script>
+					const fortuna = { lat: 55.935788, lng: -3.105231 };
+					function initMap() {
+						const map = new google.maps.Map(document.getElementById("map"), {
+							center: fortuna,
+							zoom: 14,
+						});
+						const marker = new google.maps.Marker({
+							position: fortuna,
+							map: map,
+							icon: "img/favicon/favicon-32x32.png",
+							title: "La Fortuna Restaurant",
+						});
+					}
+				</script>
+				<script
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8CGBO9QEwj4DJX4zFT0th_gEAH6XnYd8&callback=initMap"
+					async
+					defer
+				></script>
+			</div>
 			<!---------------------------------------------- SOCIAL -->
 			<div class="footer__social">
 				<ul>
@@ -406,52 +456,6 @@
 					</li>
 				</ul>
 				<div class="copyright">&copy; 2021 by JK27. All rights reserved.</div>
-			</div>
-			<!---------------------------------------------- LOCATION -->
-			<div class="footer__location">
-				<h3>Location</h3>
-				<p class="footer__text">Fort Kinnaird Retail Park, Newcraighall Rd,</p>
-				<p class="footer__text">Edinburgh EH15 3HP</p>
-
-				<!----------------------------- MAP -->
-				<div id="map"></div>
-				<script>
-					const fortuna = { lat: 55.935788, lng: -3.105231 };
-					function initMap() {
-						const map = new google.maps.Map(document.getElementById("map"), {
-							center: fortuna,
-							zoom: 14,
-						});
-						const marker = new google.maps.Marker({
-							position: fortuna,
-							map: map,
-							icon: "img/favicon/favicon-32x32.png",
-							title: "La Fortuna Restaurant",
-						});
-					}
-				</script>
-				<script
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8CGBO9QEwj4DJX4zFT0th_gEAH6XnYd8&callback=initMap"
-					async
-					defer
-				></script>
-			</div>
-			<!---------------------------------------------- CONTACT -->
-			<div class="footer__contact">
-				<ul>
-					<h3>Contact</h3>
-					<!----------------------------- PHONE -->
-					<li class="footer__contact--item">
-						<p>0131 555 555</p>
-					</li>
-					<!----------------------------- EMAIL -->
-					<li class="footer__contact--item">
-						<p>hola@lafortuna.com</p>
-					</li>
-					<h3>Opening Hours</h3>
-					<p class="footer__text">Mon - Thu: 12:00 - 22:00</p>
-					<p class="footer__text">Fri - Sun: 11:00 - 23:00</p>
-				</ul>
 			</div>
 		</footer>
 	</body>

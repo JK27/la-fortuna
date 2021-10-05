@@ -19,7 +19,7 @@
 	grid-template-rows: auto;
 
 	/* ----------------- @MEDIA */
-	@include respond(tab-por) {
+	@include respond(tablet) {
 		grid-column: left-start / right-end; // Makes header take full vw
 	}
 
@@ -30,7 +30,7 @@
 		align-self: flex-end; // Brings contents to bottom of row, looking centered in header
 
 		/* ----------------- @MEDIA */
-		@include respond(tab-por) {
+		@include respond(tablet) {
 			align-self: center; // Places box in center of header after removing button links
 			padding-right: 1rem;
 		}
@@ -42,8 +42,21 @@
 		align-self: center;
 		justify-self: right; // Brings logo to center of header
 
+		/* ----------------- @MEDIA */
+		@include respond(fourk) {
+			height: 30rem;
+		}
+
 		@include respond(xl) {
-			height: 25rem;
+			height: 20rem;
+		}
+
+		@include respond(mob-por) {
+			height: 10rem;
+		}
+
+		@include respond(xs) {
+			height: 8rem;
 		}
 	}
 
@@ -59,17 +72,25 @@
 			margin-left: 1rem;
 
 			/* ------------------------------ @MEDIA */
+			@include respond(fourk) {
+				font-size: 12rem;
+			}
+
 			@include respond(xl) {
-				font-size: 9rem;
+				font-size: 7rem;
 			}
 
 			@include respond(desktop) {
 				font-size: 5rem;
 			}
 
-			@include respond(mobile) {
-				font-size: 4rem;
-				letter-spacing: 1rem;
+			@include respond(mob-por) {
+				font-size: 3.5rem;
+				letter-spacing: 0.8rem;
+			}
+
+			@include respond(xs) {
+				font-size: 2.5rem;
 			}
 		}
 		/* --------------------------- SMALL */
@@ -81,21 +102,29 @@
 			column-gap: 1.5rem;
 			align-items: center;
 
+			/* ----------------- @MEDIA */
+			@include respond(fourk) {
+				font-size: 5rem;
+			}
+
+			@include respond(xl) {
+				font-size: 3rem;
+			}
+
+			@include respond(mob-por) {
+				font-size: 1.6rem;
+			}
+
+			@include respond(xs) {
+				font-size: 1.2rem;
+			}
+
 			&::before,
 			&::after {
 				content: "";
 				height: 1px;
 				display: block;
 				background-color: currentColor;
-			}
-
-			/* --------------- @MEDIA */
-			@include respond(xl) {
-				font-size: 3rem;
-			}
-
-			@include respond(desktop) {
-				font-size: 1rem;
 			}
 		}
 
@@ -106,16 +135,25 @@
 			letter-spacing: 1rem;
 
 			/* ----------------- @MEDIA */
+			@include respond(fourk) {
+				font-size: 8rem;
+			}
+
 			@include respond(xl) {
-				font-size: 6rem;
+				font-size: 5rem;
 			}
 
 			@include respond(desktop) {
 				font-size: 3rem;
 			}
 
-			@include respond(mobile) {
-				font-size: 3rem;
+			@include respond(mob-por) {
+				font-size: 2.8rem;
+				letter-spacing: normal;
+			}
+
+			@include respond(xs) {
+				font-size: 2.2rem;
 				letter-spacing: normal;
 			}
 		}
@@ -128,7 +166,7 @@
 		align-self: center;
 
 		/* ----------------- @MEDIA */
-		@include respond(tab-por) {
+		@include respond(tablet) {
 			display: none; // Remove button links for smaller screens
 		}
 	}

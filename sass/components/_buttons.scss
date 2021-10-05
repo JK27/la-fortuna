@@ -17,13 +17,13 @@
 
 		animation: moveInBottom 2s ease;
 
-		/* ------------------------------ @MEDIA */
-		@include respond(xl) {
-			font-size: 4rem;
+		/* --------------------------- @MEDIA */
+		@include respond(fourk) {
+			font-size: 6rem;
 		}
 
-		@include respond(desktop) {
-			font-size: 2rem;
+		@include respond(xl) {
+			font-size: 4rem;
 		}
 	}
 
