@@ -3,9 +3,9 @@
 131.25em	->		2101px +			->		4K
 112.5em		->		1801 - 2100px	->		XL desktop
 ***** [1201 - 1800px]			(default styles apply) *****
-75em			->		1025 - 1200px	->		Laptop / Tablet landscape
-64em			->		769 - 1024px	->		Tablet portrait
-48em			->		481 - 768px		->		Mobile landscape
+75em			->		1017 - 1200px	->		Laptop / Tablet landscape
+63.5em		->		753 - 1016px	->		Tablet portrait
+47em			->		481 - 752px		->		Mobile landscape
 30em			->		321 - 480px		->		Mobile portrait
 20em			->		0 - 320px			->		XS (Galaxy Fold single-screen)
  
@@ -51,16 +51,16 @@ ORDER:
 
 	/*----------------------------------- TABLET */
 	@if $breakpoint == tablet {
-		@media (max-width: 64em) {
+		@media (max-width: 63.5em) {
 			@content;
-		} // max-width: 1024px
+		} // max-width: 1016px
 	}
 
 	/*----------------------------------- MOBILE LANDSCAPE */
 	@if $breakpoint == mob-lan {
-		@media (max-width: 48em) {
+		@media (max-width: 47em) {
 			@content;
-		} // max-width: 768px
+		} // max-width: 752px
 	}
 
 	/*----------------------------------- MOBILE PORTRAIT*/

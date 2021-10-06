@@ -55,11 +55,15 @@ body {
 		minmax(6rem, 1fr) [full-end right-start] 3rem [right-end];
 
 	/* ----------------------------- @MEDIA */
-	@include respond(laptop) {
+	@include respond(mob-lan) {
+		grid-template-rows: 90vh repeat(5, min-content);
+	}
+
+	@include respond(mob-por) {
 		grid-template-rows: 40vh repeat(5, min-content);
 	}
 
-	@include respond(tablet) {
-		grid-template-rows: 30vh repeat(5, min-content);
+	@include respond(xs) {
+		grid-template-rows: 50vh repeat(5, min-content);
 	}
 }

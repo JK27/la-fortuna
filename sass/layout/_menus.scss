@@ -10,8 +10,12 @@
 			padding: 8rem 8vw;
 		}
 		// Makes section take full width after removing picture
-		@include respond(mob-por) {
+		@include respond(tablet) {
 			grid-column: full-start / full-end;
+		}
+
+		@include respond(mob-por) {
+			padding-bottom: 2rem;
 		}
 
 		/* ------------------------------------- TEXT */
@@ -66,7 +70,11 @@
 			}
 
 			@include respond(mob-por) {
-				font-size: 1.8rem;
+				font-size: 2.2rem;
+
+				&:last-child {
+					margin-top: 2rem; // Reduces gap between links as they are on top of each other
+				}
 			}
 
 			@include respond(xs) {
@@ -107,15 +115,9 @@
 
 		/* --------------------------- @MEDIA */
 		// Places links on 2 rows one on top of the other
-		@include respond(tab-lan) {
+		@include respond(mob-por) {
 			grid-template-columns: 1fr;
 			grid-template-rows: repeat(2, 1fr);
-		}
-
-		// Places links back to be on just 1 row
-		@include respond(tab-lan) {
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: 1fr;
 		}
 	}
 	/* -------------------------------------------- IMAGE */
@@ -125,7 +127,7 @@
 
 		/* ----------------------------- @MEDIA */
 		// Removes picture leaving real state for content
-		@include respond(mob-por) {
+		@include respond(tablet) {
 			display: none;
 		}
 	}

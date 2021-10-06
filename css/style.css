@@ -3,9 +3,9 @@
 131.25em	->		2101px +			->		4K
 112.5em		->		1801 - 2100px	->		XL desktop
 ***** [1201 - 1800px]			(default styles apply) *****
-75em			->		1025 - 1200px	->		Laptop / Tablet landscape
-64em			->		769 - 1024px	->		Tablet portrait
-48em			->		481 - 768px		->		Mobile landscape
+75em			->		1017 - 1200px	->		Laptop / Tablet landscape
+63.5em		->		753 - 1016px	->		Tablet portrait
+47em			->		481 - 752px		->		Mobile landscape
 30em			->		321 - 480px		->		Mobile portrait
 20em			->		0 - 320px			->		XS (Galaxy Fold single-screen)
  
@@ -84,7 +84,7 @@ body {
   /*----------------------------------- MOBILE LANDSCAPE */
   /*----------------------------------- MOBILE PORTRAIT*/
   /*----------------------------------- XS */ }
-  @media (max-width: 64em) {
+  @media (max-width: 63.5em) {
     body {
       padding-top: 0; } }
 
@@ -107,13 +107,23 @@ body {
   /*----------------------------------- TABLET */
   /*----------------------------------- MOBILE LANDSCAPE */
   /*----------------------------------- MOBILE PORTRAIT*/
+  /*----------------------------------- XS */
+  /*----------------------------------- 4K */
+  /*----------------------------------- XL */
+  /*----------------------------------- LAPTO */
+  /*----------------------------------- TABLET */
+  /*----------------------------------- MOBILE LANDSCAPE */
+  /*----------------------------------- MOBILE PORTRAIT*/
   /*----------------------------------- XS */ }
-  @media (max-width: 75em) {
+  @media (max-width: 47em) {
+    .container {
+      grid-template-rows: 90vh repeat(5, min-content); } }
+  @media (max-width: 30em) {
     .container {
       grid-template-rows: 40vh repeat(5, min-content); } }
-  @media (max-width: 64em) {
+  @media (max-width: 20em) {
     .container {
-      grid-template-rows: 30vh repeat(5, min-content); } }
+      grid-template-rows: 50vh repeat(5, min-content); } }
 
 /* -------------------------------------------------------- BODY */
 body {
@@ -359,12 +369,14 @@ body {
   @media (max-width: 75em) {
     .features {
       padding: 8rem 0; } }
-  @media (max-width: 64em) {
+  @media (max-width: 63.5em) {
     .features {
-      padding: 6rem 0; } }
+      padding: 6rem 0;
+      font-size: 2rem; } }
   @media (max-width: 20em) {
     .features {
-      grid-column: full-start / full-end; } }
+      grid-column: full-start / full-end;
+      font-size: 1.6rem; } }
 
 .feature {
   display: grid;
@@ -434,7 +446,7 @@ body {
     .footer {
       padding: 2rem 0;
       font-size: 2rem; } }
-  @media (max-width: 64em) {
+  @media (max-width: 63.5em) {
     .footer {
       padding: 4rem; } }
   @media (max-width: 30em) {
@@ -564,7 +576,7 @@ body {
     /*----------------------------------- MOBILE LANDSCAPE */
     /*----------------------------------- MOBILE PORTRAIT*/
     /*----------------------------------- XS */ }
-    @media (max-width: 64em) {
+    @media (max-width: 63.5em) {
       .footer #map {
         height: 40%; } }
   .footer__contact {
@@ -668,7 +680,7 @@ body {
   /* --------------------------------------- LOGO */
   /* --------------------------------------- HEADING */
   /* -------------------------------------------- LINKS */ }
-  @media (max-width: 64em) {
+  @media (max-width: 63.5em) {
     .header {
       grid-column: left-start / right-end; } }
   .header__box {
@@ -683,7 +695,7 @@ body {
     /*----------------------------------- MOBILE LANDSCAPE */
     /*----------------------------------- MOBILE PORTRAIT*/
     /*----------------------------------- XS */ }
-    @media (max-width: 64em) {
+    @media (max-width: 63.5em) {
       .header__box {
         align-self: center;
         padding-right: 1rem; } }
@@ -719,6 +731,13 @@ body {
     /*----------------------------------- TABLET */
     /*----------------------------------- MOBILE LANDSCAPE */
     /*----------------------------------- MOBILE PORTRAIT*/
+    /*----------------------------------- XS */
+    /*----------------------------------- 4K */
+    /*----------------------------------- XL */
+    /*----------------------------------- LAPTO */
+    /*----------------------------------- TABLET */
+    /*----------------------------------- MOBILE LANDSCAPE */
+    /*----------------------------------- MOBILE PORTRAIT*/
     /*----------------------------------- XS */ }
     @media (min-width: 131.25em) {
       .header__logo {
@@ -726,6 +745,9 @@ body {
     @media (min-width: 112.5em) and (max-width: 131.24em) {
       .header__logo {
         height: 20rem; } }
+    @media (max-width: 47em) {
+      .header__logo {
+        height: 13rem; } }
     @media (max-width: 30em) {
       .header__logo {
         height: 10rem; } }
@@ -778,6 +800,13 @@ body {
       /*----------------------------------- TABLET */
       /*----------------------------------- MOBILE LANDSCAPE */
       /*----------------------------------- MOBILE PORTRAIT*/
+      /*----------------------------------- XS */
+      /*----------------------------------- 4K */
+      /*----------------------------------- XL */
+      /*----------------------------------- LAPTO */
+      /*----------------------------------- TABLET */
+      /*----------------------------------- MOBILE LANDSCAPE */
+      /*----------------------------------- MOBILE PORTRAIT*/
       /*----------------------------------- XS */ }
       @media (min-width: 131.25em) {
         .header__heading--main {
@@ -785,6 +814,9 @@ body {
       @media (min-width: 112.5em) and (max-width: 131.24em) {
         .header__heading--main {
           font-size: 7rem; } }
+      @media (max-width: 47em) {
+        .header__heading--main {
+          font-size: 4rem; } }
       @media (max-width: 30em) {
         .header__heading--main {
           font-size: 3.5rem;
@@ -883,6 +915,13 @@ body {
       /*----------------------------------- TABLET */
       /*----------------------------------- MOBILE LANDSCAPE */
       /*----------------------------------- MOBILE PORTRAIT*/
+      /*----------------------------------- XS */
+      /*----------------------------------- 4K */
+      /*----------------------------------- XL */
+      /*----------------------------------- LAPTO */
+      /*----------------------------------- TABLET */
+      /*----------------------------------- MOBILE LANDSCAPE */
+      /*----------------------------------- MOBILE PORTRAIT*/
       /*----------------------------------- XS */ }
       @media (min-width: 131.25em) {
         .header__heading--sub {
@@ -890,14 +929,16 @@ body {
       @media (min-width: 112.5em) and (max-width: 131.24em) {
         .header__heading--sub {
           font-size: 5rem; } }
+      @media (max-width: 47em) {
+        .header__heading--sub {
+          font-size: 3rem; } }
       @media (max-width: 30em) {
         .header__heading--sub {
           font-size: 2.8rem;
           letter-spacing: normal; } }
       @media (max-width: 20em) {
         .header__heading--sub {
-          font-size: 2.2rem;
-          letter-spacing: normal; } }
+          font-size: 2.2rem; } }
   .header__links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -910,7 +951,7 @@ body {
     /*----------------------------------- MOBILE LANDSCAPE */
     /*----------------------------------- MOBILE PORTRAIT*/
     /*----------------------------------- XS */ }
-    @media (max-width: 64em) {
+    @media (max-width: 63.5em) {
       .header__links {
         display: none; } }
 
@@ -936,13 +977,23 @@ body {
     /*----------------------------------- MOBILE LANDSCAPE */
     /*----------------------------------- MOBILE PORTRAIT*/
     /*----------------------------------- XS */
+    /*----------------------------------- 4K */
+    /*----------------------------------- XL */
+    /*----------------------------------- LAPTO */
+    /*----------------------------------- TABLET */
+    /*----------------------------------- MOBILE LANDSCAPE */
+    /*----------------------------------- MOBILE PORTRAIT*/
+    /*----------------------------------- XS */
     /* ------------------------------------- TEXT */ }
     @media (min-width: 131.25em) {
       .menus__content {
         padding: 8rem 8vw; } }
-    @media (max-width: 30em) {
+    @media (max-width: 63.5em) {
       .menus__content {
         grid-column: full-start / full-end; } }
+    @media (max-width: 30em) {
+      .menus__content {
+        padding-bottom: 2rem; } }
     .menus__content--text {
       font-weight: 500;
       margin-top: 2rem;
@@ -1000,13 +1051,6 @@ body {
     /*----------------------------------- TABLET */
     /*----------------------------------- MOBILE LANDSCAPE */
     /*----------------------------------- MOBILE PORTRAIT*/
-    /*----------------------------------- XS */
-    /*----------------------------------- 4K */
-    /*----------------------------------- XL */
-    /*----------------------------------- LAPTO */
-    /*----------------------------------- TABLET */
-    /*----------------------------------- MOBILE LANDSCAPE */
-    /*----------------------------------- MOBILE PORTRAIT*/
     /*----------------------------------- XS */ }
     .menus__links--link {
       font-size: 2.5rem;
@@ -1055,7 +1099,9 @@ body {
           margin-top: 5rem; } }
       @media (max-width: 30em) {
         .menus__links--link {
-          font-size: 1.8rem; } }
+          font-size: 2.2rem; }
+          .menus__links--link:last-child {
+            margin-top: 2rem; } }
       @media (max-width: 20em) {
         .menus__links--link {
           font-weight: 800; } }
@@ -1079,6 +1125,10 @@ body {
         transform: scale(1); }
       .menus__links--link:visited::after {
         transform: scale(0); }
+    @media (max-width: 30em) {
+      .menus__links {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr); } }
   .menus__picture {
     grid-column: col-start 6 / full-end;
     padding-top: 1.5rem;
@@ -1090,7 +1140,7 @@ body {
     /*----------------------------------- MOBILE LANDSCAPE */
     /*----------------------------------- MOBILE PORTRAIT*/
     /*----------------------------------- XS */ }
-    @media (max-width: 30em) {
+    @media (max-width: 63.5em) {
       .menus__picture {
         display: none; } }
   .menus__img {

@@ -51,6 +51,10 @@
 			height: 20rem;
 		}
 
+		@include respond(mob-lan) {
+			height: 13rem;
+		}
+
 		@include respond(mob-por) {
 			height: 10rem;
 		}
@@ -82,6 +86,10 @@
 
 			@include respond(desktop) {
 				font-size: 5rem;
+			}
+
+			@include respond(mob-lan) {
+				font-size: 4rem;
 			}
 
 			@include respond(mob-por) {
@@ -147,6 +155,10 @@
 				font-size: 3rem;
 			}
 
+			@include respond(mob-lan) {
+				font-size: 3rem;
+			}
+
 			@include respond(mob-por) {
 				font-size: 2.8rem;
 				letter-spacing: normal;
@@ -154,7 +166,6 @@
 
 			@include respond(xs) {
 				font-size: 2.2rem;
-				letter-spacing: normal;
 			}
 		}
 	}
