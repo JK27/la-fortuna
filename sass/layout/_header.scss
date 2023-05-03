@@ -119,6 +119,10 @@
 				font-size: 3rem;
 			}
 
+			@include respond(mob-lan) {
+				font-size: 1.8rem;
+			}
+
 			@include respond(mob-por) {
 				font-size: 1.6rem;
 			}

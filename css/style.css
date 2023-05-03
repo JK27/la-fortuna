@@ -858,6 +858,13 @@ body {
       /*----------------------------------- TABLET */
       /*----------------------------------- MOBILE LANDSCAPE */
       /*----------------------------------- MOBILE PORTRAIT*/
+      /*----------------------------------- XS */
+      /*----------------------------------- 4K */
+      /*----------------------------------- XL */
+      /*----------------------------------- LAPTO */
+      /*----------------------------------- TABLET */
+      /*----------------------------------- MOBILE LANDSCAPE */
+      /*----------------------------------- MOBILE PORTRAIT*/
       /*----------------------------------- XS */ }
       @media (min-width: 131.25em) {
         .header__heading--small {
@@ -865,6 +872,9 @@ body {
       @media (min-width: 112.5em) and (max-width: 131.24em) {
         .header__heading--small {
           font-size: 3rem; } }
+      @media (max-width: 47em) {
+        .header__heading--small {
+          font-size: 1.8rem; } }
       @media (max-width: 30em) {
         .header__heading--small {
           font-size: 1.6rem; } }
